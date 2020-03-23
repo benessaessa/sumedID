@@ -97,11 +97,55 @@
 .custom-control .custom-control-label{
     cursor: pointer;
 }
+.bgEd{
+    background-color: #323659;
+    padding: 0rem 1rem 1rem 1rem;
+    border-radius:4px;
+}
+.btnP{
+    background-color: #7e82a3;
+    color: white;
+}
+.btnP:hover{
+    color: #081d31;
+    border-color: #323659;
+    background-color: aliceblue;
+}
+.jumBg{
+    background-color: #eef0f5;
+}
+.modalAdd label{
+    font-weight: bold;
+}
+.modalAdd .form-control,.modalAdd .custom-file{
+    height: 3rem;
+}
+.accountC{
+    cursor: pointer;
+}
+.mAcount{
+    display: none;
+    background-color: #081d31;
+    border-bottom: 1px solid white;
+}
+.btnND{
+    background-color: white;
+    border-color: black;
+}
+.dropD::after{
+    display: none;
+}
 @media screen and (max-width:400px){
     .login h2{
         font-size: 1.5rem;
     }
     .hideSm{
         display:none;
+    }
+}
+@media screen and (max-width:800px){
+   
+    .mAcount{
+        display:block;
     }
 }

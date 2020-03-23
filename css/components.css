@@ -442,7 +442,7 @@ footer .ft-heart:before {
             background-color: inherit; }
         .main-menu.menu-dark .navigation > li.active > a {
           font-weight: 700;
-          background: rgba(0, 0, 0, 0.24);
+          background: rgba(204, 180, 180, 0.24);
           margin: 0 1rem 0 1rem;
           border-radius: 0.3rem; }
         .main-menu.menu-dark .navigation > li .active {
@@ -493,7 +493,7 @@ footer .ft-heart:before {
         .main-menu.menu-dark .navigation > li.hover > a {
           padding-left: 24px; }
         .main-menu.menu-dark .navigation > li.active > a {
-          padding: 12px 17px 12px 17px; }
+          padding: 3px 8px 3px 10px; }
     .main-menu.menu-dark.expanded .navigation > li.active > a {
       margin: 0 1rem; }
     .main-menu.menu-dark ul.menu-popout {
