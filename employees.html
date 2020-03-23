@@ -46,7 +46,7 @@
                 <ul class="nav navbar-nav flex-row">
                     <li class="nav-item mobile-menu d-lg-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="fa fa-align-justify"></i></a></li>
                     <li class="nav-item mr-auto">
-                        <p class="badge bYellow mt-1">Super Admin</p>
+                        <p class="badge bYellow">Super Admin</p>
                         <div class="media">
                             <img src="images/avat.jpg" class="mr-1 imgReduis" width="40px" height="40px" alt="...">
                             <div class="media-body">
@@ -126,7 +126,7 @@
                 <div class="row pt-2">
                     <div class="col-lg-12">
                         <form action="#">
-                            <div class="input-group mb-3">
+                            <div class="input-group mb-1">
                                 <input type="text" class="form-control border-0 p-3" placeholder="Search by employee Name, ID or any related term ..." required aria-label="Recipient's username"
                                     aria-describedby="basic-addon2">
                                 <div class="input-group-append">
@@ -138,60 +138,45 @@
                         </form>
                     </div>
                 </div>
-                <div class="row pt-1">
-                    <div class="col-xl-8 col-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h5 class="card-title font-weight-bold">ISSUED EMPLOYEE ID CARDS</h5>
-                            </div>
-                            <div class="card-content collapse show pt-2">
-                                <div class="card-body pt-0">
-                                    <div class="row mb-1 text-center">
-                                        <div class="col-6 col-md-3 border-right pt-2">
-                                            <h1 class="danger">162</h1>
-                                            <h5>Cards Issued</h5>
-                                        </div>
-                                        <div class="col-6 col-md-3 border-right pt-2">
-                                            <h2 class="danger">108 </h2>
-                                            <h5>Employees</h5>
-                                        </div>
-                                        <div class="col-6 col-md-3 border-right pt-2">
-                                            <h2 class="danger">54 </h2>
-                                            <h5>Dependants</h5>
-                                        </div>
-                                        <div class="col-6 col-md-3 pt-2">
-                                            <h5>Previous week</h5>
-                                            <h2 class="text-muted">$52,502</h2>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="row">
+                    <div class="col-xl-3 col-md-6 col-12">
+                        <div class="form-group">
+                          <label for="sel1"></label>
+                          <select class="form-control" id="sel1">
+                            <option>Number of Departments</option>
+                            <option>1</option>
+                            <option>2</option>
+                          </select>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-12">
-                        <div class="row">
-                            <div class="col-md-12 col-12">
-                                <div class="card pull-up">
-                                    <div class="card-header bg-hexagons">
-                                        <h4 class="card-title">SITES  <span class="danger">(PROJECTS)</span></h4>
-                                    </div>
-                                    <div class="card-content collapse show bg-hexagons">
-                                        <div class="card-body pt-0">
-                                            <div class="row text-center border-top">
-                                                <div class="col-4 col-md-4 border-right">
-                                                   <h1 class="pt-1">9</h1>
-                                                   <h1>Sites</h1>
-                                                </div>
-                                                <div class="col-8 col-md-8">
-                                                    <h4 class="border-bottom py-1">West Alexandria</h4>
-                                                    <h4 class="border-bottom pb-1">Al Daqahlia Gov..</h4>
-                                                    <h4>Al Qahira, Cairo</h4>
-                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="col-xl-3 col-md-6 col-12">
+                        <div class="form-group">
+                          <label for="sel2"></label>
+                          <select class="form-control" id="sel2">
+                            <option>By Site Location</option>
+                            <option>Egypt</option>
+                            <option>Minya</option>
+                          </select>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-12">
+                        <div class="form-group">
+                          <label for="sel1"></label>
+                          <select class="form-control" id="sel1">
+                            <option>Medical Grade</option>
+                            <option>Medical Grade</option>
+                            <option>Medical Grade</option>
+                          </select>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-12">
+                        <div class="form-group">
+                          <label for="sel1"></label>
+                          <select class="form-control" id="sel1">
+                            <option>Role</option>
+                            <option>Role</option>
+                            <option>Role</option>
+                          </select>
                         </div>
                     </div>
                 </div>
@@ -202,30 +187,36 @@
 
                     <div id="recent-sales" class="col-12 col-md-12">
                         <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title font-we">RECENTLY ISSUED IDs</h4>
-                                <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
-                                <div class="heading-elements">
-                                    <ul class="list-inline mb-0">
-                                        <li><a class="btn btn-sm btn-danger box-shadow-2 round btn-min-width pull-right" href="invoice-summary.html" target="_blank">View all</a></li>
-                                    </ul>
-                                </div>
-                            </div>
+                           
                             <div class="card-content mt-1">
                                 <div class="table-responsive">
                                     <table id="recent-orders" class="table table-hover table-xl mb-0">
                                         <thead>
                                             <tr>
-                                                <th class="border-top-0">EMPLOYEE NAME</th>
+                                                <th>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                        <label class="custom-control-label" for="customCheck1"></label>
+                                                    </div>
+                                                    
+                                                </th>
+                                                <th class="border-top-0"> EMPLOYEE NAME </th>
                                                 <th class="border-top-0">Role</th>
                                                 <th class="border-top-0">Employee ID</th>
-                                                <th class="border-top-0">ISSUANCE DATE</th>
-                                                <th class="border-top-0">ISSUED BY</th>
-                                                <th class="border-top-0">VIEW</th>
+                                                <th class="border-top-0">Site</th>
+                                                <th class="border-top-0">Medical Grade</th>
+                                                <th class="border-top-0">Dependents</th>
+                                                <th></th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                                        <label class="custom-control-label" for="customCheck2"></label>
+                                                    </div>
+                                                </td>
                                                 <td class="text-truncate p-1">
                                                     <ul class="list-unstyled users-list m-0">
                                                         <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Kimberly Simmons" class="avatar avatar-sm pull-up">
@@ -247,10 +238,21 @@
                                                     <p>Ahmed Ibrahim</p>
                                                 </td>
                                                 <td>
-                                                    <p><a href="#"> preview </a></p>
+                                                    <p> 1 </p>
+                                                </td>
+                                                <td>
+                                                    <button class="btn btn-outline-primary">
+                                                        <i class="fa fa-edit"></i> Edit
+                                                    </button>
                                                 </td>
                                             </tr>
                                             <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                                        <label class="custom-control-label" for="customCheck3"></label>
+                                                    </div>
+                                                </td>
                                                 <td class="text-truncate p-1">
                                                     <ul class="list-unstyled users-list m-0">
                                                         <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Kimberly Simmons" class="avatar avatar-sm pull-up">
@@ -272,32 +274,12 @@
                                                     <p>Ahmed Ibrahim</p>
                                                 </td>
                                                 <td>
-                                                    <p><a href="#"> preview </a></p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-truncate p-1">
-                                                    <ul class="list-unstyled users-list m-0">
-                                                        <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Kimberly Simmons" class="avatar avatar-sm pull-up">
-                                                            <img class="media-object rounded-circle" src="images/avat.jpg" alt="Avatar">
-                                                        </li>
-                                                        <li class="avatar avatar-sm pl-5">
-                                                            <span class="txtBlack font-weight-bold">Mohamed Essa</span>
-                                                        </li>
-                                                    </ul>
-                                                </td>
-                                                <td class="text-truncate">Senior Executive</td>
-                                                <td>
-                                                    <p>1300522</p>
+                                                    <p> 1 </p>
                                                 </td>
                                                 <td>
-                                                  <p>28 September 2011</p>
-                                                </td>
-                                                <td>
-                                                    <p>Ahmed Ibrahim</p>
-                                                </td>
-                                                <td>
-                                                    <p><a href="#"> preview </a></p>
+                                                    <button class="btn btn-outline-primary">
+                                                        <i class="fa fa-edit"></i> Edit
+                                                    </button>
                                                 </td>
                                             </tr>
                                         </tbody>

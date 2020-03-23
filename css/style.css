@@ -74,13 +74,29 @@
     font-weight: bold;
 }
 .bYellow{
+    margin-top:0.8rem;
     background-color: #e68a00;
     border-radius: 25px;
 }
 .imgReduis{
     border-radius: 25px;
 }
-
+.btnD{
+    background-color:black;
+    color: white;
+}
+.btnD:hover{
+    background-color: white;
+    border-color: black;
+    color: black;
+}
+.input-group > .form-control, .input-group > .form-control-plaintext, .input-group > .custom-select, .input-group > .custom-file{
+    font-size:16px;
+    color: teal;
+}
+.custom-control .custom-control-label{
+    cursor: pointer;
+}
 @media screen and (max-width:400px){
     .login h2{
         font-size: 1.5rem;
