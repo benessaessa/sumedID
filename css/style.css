@@ -6,7 +6,7 @@
     font-family: Montserrat;
 }
 .login{
-    padding: 3.5rem 0 2rem 0;
+    padding: 3.5rem 0 2rem 1rem;
 }
 .login .form-control{
     height: 3.5rem;
@@ -130,10 +130,36 @@
 }
 .btnND{
     background-color: white;
-    border-color: black;
+    border:2px solid gray;
+}
+.btnND:hover{
+    background-color: black;
+    color: white;
 }
 .dropD::after{
     display: none;
+}
+.btnPrint{
+    background-color: white;
+    height: 3.4rem;
+    font-weight:bold;
+    background-color: #f4f5fa;
+    border: 2px solid gray;
+    padding: 0.2rem;
+}
+.btnPrint:hover{
+    opacity:0.9;
+    color:red;
+}
+.bgHead{
+    background-color: rgb(247, 228, 228);
+    color: black;
+    padding: 2rem;
+}
+.imgCircule{
+    border-radius: 50%;
+    height: 170px;
+    width: 170px;
 }
 @media screen and (max-width:400px){
     .login h2{
@@ -141,6 +167,9 @@
     }
     .hideSm{
         display:none;
+    }
+    .login{
+        padding: 2rem 0.5rem;
     }
 }
 @media screen and (max-width:800px){

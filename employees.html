@@ -140,14 +140,14 @@
                                 <i class="fa fa-plus"></i> Add New Employees
                             </button>
                             <div class="dropdown-menu">
-                                <p class="dropdown-header pl-2 pt-1">select</p>  
+                                <p class="dropdown-header pl-2 pt-1 pb-1 border-bottom">select</p>  
                                 <a class="dropdown-item" href="#">
                                     <button type="button" class="btn btnND btn-lg btn-block"
                                     data-toggle="modal" data-target="#addEmployee" > Fill Employee Details</button>
                                 </a>
                                 <a class="dropdown-item" href="#">
                                     <button type="button" class="btn btnND btn-lg btn-block"
-                                    data-toggle="modal" data-target="#addEmployee" > Ask Employee to fill his Details</button>
+                                    data-toggle="modal" data-target="#askEmployee" > Ask Employee to fill his Details</button>
                                 </a>
                             </div>
                           </div>
@@ -299,9 +299,9 @@
                                                     <p> 1 </p>
                                                 </td>
                                                 <td>
-                                                    <button class="btn btn-outline-primary">
+                                                    <a href="edit.html" class="btn btn-outline-primary">
                                                         <i class="fa fa-edit"></i> Edit
-                                                    </button>
+                                                    </a>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -339,9 +339,9 @@
                                                     <p> 1 </p>
                                                 </td>
                                                 <td>
-                                                    <button class="btn btn-outline-primary">
+                                                    <a href="edit.html" class="btn btn-outline-primary">
                                                         <i class="fa fa-edit"></i> Edit
-                                                    </button>
+                                                    </a>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -379,9 +379,9 @@
                                                     <p> 1 </p>
                                                 </td>
                                                 <td>
-                                                    <button class="btn btn-outline-primary">
+                                                    <a href="edit.html" class="btn btn-outline-primary">
                                                         <i class="fa fa-edit"></i> Edit
-                                                    </button>
+                                                    </a>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -419,9 +419,9 @@
                                                     <p> 1 </p>
                                                 </td>
                                                 <td>
-                                                    <button class="btn btn-outline-primary">
+                                                    <a href="edit.html" class="btn btn-outline-primary">
                                                         <i class="fa fa-edit"></i> Edit
-                                                    </button>
+                                                    </a>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -511,6 +511,44 @@
                                     <div class="form-group">
                                         <label for="loc">Location (sites)</label>
                                         <input type="text" class="form-control" placeholder="Sumed West Alexandria HQ" id="loc">
+                                    </div>
+                                    <button class="btn btn-block btnD">Add Employee</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ask Employee -->
+                <div class="modal fade" id="askEmployee" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modalAdd" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header bgHead border-bottom-0">
+                                <h3 class="modal-title font-weight-bold" id="askEmployee"><i class="fa fa-user"></i> Add Employee
+                                </h3>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body px-2">
+                                <form action="#">
+                                    <div class="form-group pt-1">
+                                        <label for="email2">Email Address</label>
+                                        <input type="email" class="form-control" placeholder="Mohamed.Essa@sumd.org" id="email2">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="medGrade">Medical Grade</label>
+                                        <select class="form-control" id="medGrade">
+                                          <option>A ( Premium )</option>
+                                          <option>B ( Premium )</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="medicalD">Dependent Medical Grade</label>
+                                        <select class="form-control" id="medicalD">
+                                          <option>A (Premium)</option>
+                                          <option>B (Premium)</option>
+                                        </select>
                                     </div>
                                     <button class="btn btn-block btnD">Add Employee</button>
                                 </form>
