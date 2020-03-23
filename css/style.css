@@ -1,0 +1,91 @@
+.hedLogin{
+    background-color: white;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+}
+.txtMons{
+    font-family: Montserrat;
+}
+.login{
+    padding: 3.5rem 0 2rem 0;
+}
+.login .form-control{
+    height: 3.5rem;
+    box-shadow: 2px 2px 14px 0 rgba(0, 0, 0, 0.16);
+}
+.login h1{
+    color: #9ba0ac;
+}
+.login h2{
+    color: #081d31;
+}
+.login label{
+    font-weight: bold;
+    opacity: 0.7;
+    color: #15314d;
+    font-size: 14px;
+}
+.hedLogin h6{
+    font-size: 0.8rem;
+    padding-top: 0.6rem;
+    margin-bottom: 0;
+    color: #9ba0ac;
+    font-family: Montserrat;
+    font-weight: bold;
+}
+.hedLogin h5{
+    font-size: 0.8rem;
+    font-family: Montserrat;
+    font-weight: bold;
+}
+.txtColor{
+    color: #323659;
+    font-family: Montserrat;
+    font-weight: bolder;
+}
+.txtForget{
+    font-size: 12px;
+    font-weight: bolder;
+    color: #081d31;
+    opacity: 0.7;
+}
+.imgLogin{
+    margin-top: -3px;
+    max-height: 510px;
+}
+.btnDark{
+    background-color: black;
+    height: 3.5rem;
+    font-size: 14px;
+    font-family: Montserrat;
+    color: white;
+    font-weight: bold;
+}
+.btnDark:hover{
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+.txtBlack{
+    color:black;
+}
+.txtSmall{
+    opacity: 0.6;
+    font-size: 12px;
+    font-weight: bold;
+}
+.bYellow{
+    background-color: #e68a00;
+    border-radius: 25px;
+}
+.imgReduis{
+    border-radius: 25px;
+}
+
+@media screen and (max-width:400px){
+    .login h2{
+        font-size: 1.5rem;
+    }
+    .hideSm{
+        display:none;
+    }
+}
