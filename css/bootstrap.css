@@ -3230,7 +3230,7 @@ input[type="button"].btn-block {
   margin-left: 1.5rem; }
 
 .card-header {
-  padding: 1.5rem 1.5rem;
+  padding: 1.5rem 1.5rem 0.6rem 1rem;
   margin-bottom: 0;
   background-color: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.06); }
@@ -4633,7 +4633,7 @@ button.bg-dark:focus {
   background-color: transparent !important; }
 
 .border {
-  border: 1px solid #626e82 !important; }
+  border: 1px solid #bcc3d0  !important; }
 
 .border-top {
   border-top: 1px solid #626e82 !important; }
@@ -4642,7 +4642,7 @@ button.bg-dark:focus {
   border-right: 1px solid #626e82 !important; }
 
 .border-bottom {
-  border-bottom: 1px solid #626e82 !important; }
+  border-bottom: 1px solid #eef0f5 !important; }
 
 .border-left {
   border-left: 1px solid #626e82 !important; }

@@ -17,7 +17,7 @@
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i%7CQuicksand:300,400,500,700"
         rel="stylesheet">
-
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800,900&display=swap" rel="stylesheet">
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="css/vendors.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
@@ -111,7 +111,7 @@
                 <li class="nav-item"><a href="#"><img src="images/admin.png" class="pr-1 pb-1"><span
                             class="menu-title">Admins</span></a>
                 </li>
-                <li class="nav-item"><a href="#"><img src="images/configration.svg" class="pr-1 py-1"><span
+                <li class="nav-item"><a href="configration.html"><img src="images/configration.svg" class="pr-1 py-1"><span
                             class="menu-title">Configration</span></a>
                 </li>
             </ul>
@@ -228,10 +228,128 @@
                             </div>
                           
                     </div>
+
                 </div>
                 <!--/ Total earning & Recent Sales  -->
+            
                 <!-- Button trigger modal -->
+                <div class="row pt-1">
 
+                    <div class="col-12 col-md-8">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="font-weight-bold border-bottom pb-1">Sites (locations )</h5>
+                            </div>
+                            <div class="card-content px-1 mt-1">
+                                <div class="row">
+                                    <div class="col-md-5 px-2">
+                                        <div class="form-group">
+                                            <label for="sSite">Select Site</label>
+                                            <select class="form-control" id="sSite">
+                                                <option>West Alexandria Sumed HQ</option>
+                                                <option>Cairo</option>
+                                                <option>Alex</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group hideGroup">
+                                            <label for="sSite2">Select Site</label>
+                                            <select class="form-control" id="sSite2">
+                                                <option>West Alexandria Sumed HQ</option>
+                                                <option>Cairo</option>
+                                                <option>Alex</option>
+                                            </select>
+                                        </div>
+                                        <button class="btn bg-white addSite border-0 mb-2 font-weight-bold" data-toggle="modal" data-target="#addSite">
+                                            <i class="fa fa-plus pr-1"></i> Add Another Site</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card">
+                            <div class="card-body pb-0">
+                            <h3 class="card-title font-weight-bold">Company ID</h3>
+                            </div>
+                            <div class="card-body pb-1">
+                                <button class="btn btn-block btnD">Preview ID <i class="fa fa-arrow-right pl-1"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- ------------------------------------------- -->
+                <div class="row pt-1">
+
+                    <div class="col-12 col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="font-weight-bold border-bottom pb-1"> Dependents </h5>
+                            </div>
+                            <div class="card-content px-1 mt-1">
+                                <div class="row">
+                                    <div class="col-md-9 px-2">
+                                        <h3>3 Dependents</h3>  
+                                        <p class="pt-1">Show the editable view once the user clicks on the employee. If this is an admin that can edit the employee's data only</p> 
+                                    </div>
+                                    <div class="col-md-3">
+                                        <button class="btn btn-block btnD mt-2" data-toggle="modal" data-target="#addDependent"><i class="fa fa-plus pr-1"></i> ADD DEPENDENT</button>
+                                    </div>
+                                </div>
+                                <div class="row pt-1">
+                                    <div class="col-lg-4 col-sm-6">
+                                        <div class="card text-white bg-white border mt-1">
+                                            <div class="card-body">
+                                                <h6> ID ISSUED <button class="btn float-right btnEditS"><i class="fa fa-edit"></i> Edit</button></h6>
+                                                <div class="media pt-1 border-bottom">
+                                                    <div class="media-body">
+                                                      <h5 class="mt-0 font-weight-bold">Lamia M. Hegazy </h5>
+                                                      <p class="mt-0 mb-1 text-dark txtvSmall">Relationship to Employee: Daughter</p>
+                                                    </div>
+                                                    <img src="images/avat.jpg" width="40px" height="40px" class="ml-2 imgSmall" alt="...">
+                                                </div>
+                                                <h6 class="pt-1 txtBlack">Attached National ID </h6>
+                                                <p class="mb-0"><a href="#" class="txtGray"><i class="fa fa-file"></i> Scanned_ID_Feb2020</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6">
+                                        <div class="card text-white bg-white border mt-1">
+                                            <div class="card-body">
+                                                <h6> ID ISSUED <button class="btn float-right btnEditS"><i class="fa fa-edit"></i> Edit</button></h6>
+                                                <div class="media pt-1 border-bottom">
+                                                    <div class="media-body">
+                                                      <h5 class="mt-0 font-weight-bold">Lamia M. Hegazy </h5>
+                                                      <p class="mt-0 mb-1 text-dark txtvSmall">Relationship to Employee: Daughter</p>
+                                                    </div>
+                                                    <img src="images/avat.jpg" width="40px" height="40px" class="ml-2 imgSmall" alt="...">
+                                                </div>
+                                                <h6 class="pt-1 txtBlack">Attached National ID </h6>
+                                                <p class="mb-0"><a href="#" class="txtGray"><i class="fa fa-file"></i> Scanned_ID_Feb2020</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6">
+                                        <div class="card text-white bg-white border mt-1">
+                                            <div class="card-body">
+                                                <h6> ID ISSUED <button class="btn float-right btnEditS"><i class="fa fa-edit"></i> Edit</button></h6>
+                                                <div class="media pt-1 border-bottom">
+                                                    <div class="media-body">
+                                                      <h5 class="mt-0 font-weight-bold">Lamia M. Hegazy </h5>
+                                                      <p class="mt-0 mb-1 text-dark txtvSmall">Relationship to Employee: Daughter</p>
+                                                    </div>
+                                                    <img src="images/avat.jpg" width="40px" height="40px" class="ml-2 imgSmall" alt="...">
+                                                </div>
+                                                <h6 class="pt-1 txtBlack">Attached National ID </h6>
+                                                <p class="mb-0"><a href="#" class="txtGray"><i class="fa fa-file"></i> Scanned_ID_Feb2020</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!-- Modal -->
                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
                     aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -259,108 +377,70 @@
                         </div>
                     </div>
                 </div>
-                <!-- Modal Add Employee -->
-                <div class="modal fade" id="addEmployee" tabindex="-1" role="dialog"
-                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modalAdd" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header border-bottom-0">
-                                <h3 class="modal-title font-weight-bold" id="addEmployee">Add Employee
-                                </h3>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <form action="#">
-                                    <label for="customFile" class="font-weight-bold">Profile picture</label>
-                                    <div class="custom-file">
-                                        <input type="file" class="custom-file-input" id="customFile">
-                                        <label class="custom-file-label" for="customFile">Choose file</label>
-                                    </div>
-                                    <div class="form-group pt-1">
-                                        <label for="empName">Employee Name</label>
-                                        <input type="text" class="form-control" placeholder="Mohamed Essa" id="empName">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="depName">Dependent Name (العربية)</label>
-                                        <input dir="rtl" type="text" class="form-control" placeholder="مالك محمد عيسي" id="depName">
-                                    </div>
-                                    <div class="form-group pt-0">
-                                        <label for="empEmail">Email Address</label>
-                                        <input type="email" class="form-control" placeholder="Mohamed.Essa@sumed.com" id="empEmail">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="empID">Employee ID</label>
-                                        <select class="form-control" id="empID">
-                                          <option>1</option>
-                                          <option>2</option>
-                                          <option>3</option>
-                                          <option>4</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="medical">Medical Grade</label>
-                                        <select class="form-control" id="medical">
-                                          <option>A (Premium)</option>
-                                          <option>B (Premium)</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="loc">Location (sites)</label>
-                                        <input type="text" class="form-control" placeholder="Sumed West Alexandria HQ" id="loc">
-                                    </div>
-                                    <button class="btn btn-block btnD">Add Employee</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="addDependent" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modalAdd" role="document">
+            <div class="modal-content p-3">
+                <div class="modal-header border-bottom-0">
+                    <h3 class="modal-title font-weight-bold" id="addDependent"> Add New Dependent
+                    </h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-                <!-- ask Employee -->
-                <div class="modal fade" id="askEmployee" tabindex="-1" role="dialog"
-                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modalAdd" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header bgHead border-bottom-0">
-                                <h3 class="modal-title font-weight-bold" id="askEmployee"><i class="fa fa-user"></i> Add Employee
-                                </h3>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
+                <div class="modal-body px-2">
+                    <form action="#">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="customFile" class="font-weight-bold">Profile picture</label>
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="customFile">
+                                    <label class="custom-file-label" for="customFile">Choose file</label>
+                                </div>
+                                <div class="form-group pt-1">
+                                    <label for="empName">Dependent Name</label>
+                                    <input type="text" class="form-control" placeholder="Mohamed Essa" id="empName">
+                                </div>
+                                <div class="form-group">
+                                    <label for="depName">Dependent Name (العربية)</label>
+                                    <input dir="rtl" type="text" class="form-control" placeholder="مالك محمد عيسي" id="depName">
+                                </div>
+                                <div class="form-group pt-0">
+                                    <label for="dofBirth">Date of Birth</label>
+                                    <input type="date" class="form-control" placeholder="Mohamed.Essa@sumed.com" id="empEmail">
+                                </div>
                             </div>
-                            <div class="modal-body px-2">
-                                <form action="#">
-                                    <div class="form-group pt-1">
-                                        <label for="email2">Email Address</label>
-                                        <input type="email" class="form-control" placeholder="Mohamed.Essa@sumd.org" id="email2">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="medGrade">Medical Grade</label>
-                                        <select class="form-control" id="medGrade">
-                                          <option>A ( Premium )</option>
-                                          <option>B ( Premium )</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="medicalD">Dependent Medical Grade</label>
-                                        <select class="form-control" id="medicalD">
-                                          <option>A (Premium)</option>
-                                          <option>B (Premium)</option>
-                                        </select>
-                                    </div>
-                                    <button class="btn btn-block btnD">Add Employee</button>
-                                </form>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="relation">Relationship</label>
+                                    <select class="form-control" id="relation">
+                                      <option>Daughter</option>
+                                      <option>Brither</option>
+                                      <option>Son</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="medicald">Medical Grade</label>
+                                    <select class="form-control" id="medicald">
+                                      <option>A (Premium)</option>
+                                      <option>B (Premium)</option>
+                                    </select>
+                                </div>
+                                <button class="btn btn-block btnD">Add Dependent</button>
                             </div>
                         </div>
-                    </div>
+                        
+                    </form>
                 </div>
             </div>
         </div>
     </div>
-    <!-- END: Content-->
 
-
-
+    
     <!-- BEGIN: Vendor JS-->
     <script src="js/vendors.min.js"></script>
     <!-- BEGIN Vendor JS-->

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="icon" href="images/sumed.png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title> Employee Profile</title>
+</head>
+
+<body style="background-color: #eef0f5">
+    <header class="hedLogin">
+        <div class="container py-1">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="media">
+                        <img src="images/sumed.png" class="mr-2 img-fluid">
+                        <div class="media-body">
+                            <h6>Sumed</h6>
+                            <h5>ID Cards Application</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-7">
+                    <h5 class="pt-1 text-right">Employee ID <span class="font-weight-bold">156656</span></h5>
+                </div>
+                <div class="col-md-2 col-sm-6 col-5">
+                    <h5 class="pt-1 text-right"><a href="#" class="text-dark"> Log Out <i class="fa fa-sign-in-alt"></i></a></h5>
+                </div>
+            </div>
+            
+        </div>
+    </header>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-8 col-md-4 col-12 pt-2">
+                <h4 class="font-weight-bold "> Edit Employee Information </h4>
+                <h6><i class="fab fa-instagram"></i> Last update on Monday , September 23rd 2020</h6>
+            </div>
+            <div class="col-lg-2 col-md-2 pt-1">
+                <button type="button" class="btn font-weight-bold  btnD btn-lg btn-block">Save</button>
+            </div>
+            <div class="col-lg-2 col-md-3 pt-1">
+                <button type="button" class="btn btnPrint btn-lg btn-block"> Cancel </button>
+            </div>
+        </div>
+
+        <div class="row pt-1">
+
+            <div class="col-12 col-md-9">
+                <div class="card">
+                    <div class="card-header bg-white">
+                        <h5 class="font-weight-bold border-bottom-0 pb-1">Personal Information</h5>
+                    </div>
+                    <div class="card-content px-1 pt-1">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="images/avat.jpg" class="mx-auto d-block img-fluid imgCircule">
+                                <button class="btn btn-primary mx-auto d-flex justify-content-center mt-1">Change Photo</button>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="px-2">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <label for="nameF">Name</label>
+                                                <input type="text" class="form-control" id="nameF" placeholder="Mohamed Essa ">
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-group" dir="rtl">
+                                                <label for="nameF" class="float-right">الإسم (العربية)</label>
+                                                <input type="text" class="form-control" id="nameF" placeholder="محمد عيسي ">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <label for="emailF">Email Address</label>
+                                                <input type="email" class="form-control" id="emailF" placeholder="Mohamed.Essa@sumed.org">
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-group" dir="rtl">
+                                                <label for="empFID" class="float-right">Employee ID</label>
+                                                <input type="number" class="form-control" id="empFID" placeholder="130611">
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-group" dir="rtl">
+                                                <label for="dFB" class="float-right">Date of Birth</label>
+                                                <input type="date" class="form-control" id="dFB">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <label for="title">Title</label>
+                                                <input type="text" class="form-control" id="title" placeholder="Executive Engineer">
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-group" dir="rtl">
+                                                <label for="job" class="float-right">الوظيفة (العربية)</label>
+                                                <input type="text" class="form-control" id="job" placeholder="مهندس تنفيذي">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="medicald">Medical Grade</label>
+                                                <select class="form-control" id="medicald">
+                                                  <option>A (Premium)</option>
+                                                  <option>B (Premium)</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                    <div class="card">
+                      <div class="card-body pb-0">
+                        <h3 class="card-title font-weight-bold">Company ID</h3>
+                      </div>
+                      <img src="images/card.jpg" class="img-fluid">
+                      <div class="card-body pb-1">
+                          <button class="btn btn-block btnoD">Preview ID <i class="fa fa-arrow-right pl-1"></i></button>
+                          <button class="btn btn-block btnoD">Request ID Card </button>
+                      </div>
+                    </div>
+                  
+            </div>
+        
+        </div>
+
+
+        <div class="row pt-1">
+
+            <div class="col-12 col-md-12">
+                <div class="card p-2">
+                    <div class="card-header bg-white">
+                        <h5 class="font-weight-bold  pb-1"> Dependents </h5>
+                    </div>
+                    <div class="card-content px-1 mt-1">
+                        <div class="row">
+                            <div class="col-md-9 px-1 pt-1">
+                                <h3>3 Dependents</h3>  
+                                <p class="pt-1">Show the editable view once the user clicks on the employee. If this is an admin that can edit the employee's data only</p> 
+                            </div>
+                            <div class="col-md-3">
+                                <button class="btn btn-block btnD mt-2" data-toggle="modal" data-target="#addDependent2"><i class="fa fa-plus pr-1"></i> ADD DEPENDENT</button>
+                            </div>
+                        </div>
+                        <div class="row pt-1">
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="card text-white bg-white border mt-1">
+                                    <div class="card-body">
+                                        <h6> ID ISSUED <button class="btn float-right btnEditS"><i class="fa fa-edit"></i> Edit</button></h6>
+                                        <div class="media pt-1 border-bottom">
+                                            <div class="media-body">
+                                              <h5 class="mt-0 text-dark font-weight-bold">Lamia M. Hegazy </h5>
+                                              <p class="mt-0 mb-1 text-dark txtvSmall">Relationship to Employee: Daughter</p>
+                                            </div>
+                                            <img src="images/avat.jpg" width="40px" height="40px" class="ml-2 imgSmall" alt="...">
+                                        </div>
+                                        <h6 class="pt-1 txtBlack">Attached National ID </h6>
+                                        <p class="mb-0"><a href="#" class="txtGray"><i class="fa fa-file"></i> Scanned_ID_Feb2020</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="card text-white bg-white border mt-1">
+                                    <div class="card-body">
+                                        <h6> ID ISSUED <button class="btn float-right btnEditS"><i class="fa fa-edit"></i> Edit</button></h6>
+                                        <div class="media pt-1 border-bottom">
+                                            <div class="media-body">
+                                              <h5 class="mt-0 font-weight-bold">Lamia M. Hegazy </h5>
+                                              <p class="mt-0 mb-1 text-dark txtvSmall">Relationship to Employee: Daughter</p>
+                                            </div>
+                                            <img src="images/avat.jpg" width="40px" height="40px" class="ml-2 imgSmall" alt="...">
+                                        </div>
+                                        <h6 class="pt-1 txtBlack">Attached National ID </h6>
+                                        <p class="mb-0"><a href="#" class="txtGray"><i class="fa fa-file"></i> Scanned_ID_Feb2020</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="card text-white bg-white border mt-1">
+                                    <div class="card-body">
+                                        <h6> ID ISSUED <button class="btn float-right btnEditS"><i class="fa fa-edit"></i> Edit</button></h6>
+                                        <div class="media pt-1 border-bottom">
+                                            <div class="media-body">
+                                              <h5 class="mt-0 font-weight-bold">Lamia M. Hegazy </h5>
+                                              <p class="mt-0 mb-1 text-dark txtvSmall">Relationship to Employee: Daughter</p>
+                                            </div>
+                                            <img src="images/avat.jpg" width="40px" height="40px" class="ml-2 imgSmall" alt="...">
+                                        </div>
+                                        <h6 class="pt-1 txtBlack">Attached National ID </h6>
+                                        <p class="mb-0"><a href="#" class="txtGray"><i class="fa fa-file"></i> Scanned_ID_Feb2020</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal fade" id="addDependent2" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modalAdd" role="document">
+            <div class="modal-content p-3">
+                <div class="modal-header border-bottom-0">
+                    <h3 class="modal-title font-weight-bold" id="addDependent2"> Add New Dependent
+                    </h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body px-2">
+                    <form action="#">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="customFile" class="font-weight-bold">Profile picture</label>
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="customFile">
+                                    <label class="custom-file-label" for="customFile">Choose file</label>
+                                </div>
+                                <div class="form-group pt-1">
+                                    <label for="empName">Dependent Name</label>
+                                    <input type="text" class="form-control" placeholder="Mohamed Essa" id="empName">
+                                </div>
+                                <div class="form-group">
+                                    <label for="depName">Dependent Name (العربية)</label>
+                                    <input dir="rtl" type="text" class="form-control" placeholder="مالك محمد عيسي" id="depName">
+                                </div>
+                                <div class="form-group pt-0">
+                                    <label for="dofBirth">Date of Birth</label>
+                                    <input type="date" class="form-control" placeholder="Mohamed.Essa@sumed.com" id="empEmail">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="relation">Relationship</label>
+                                    <select class="form-control" id="relation">
+                                      <option>Daughter</option>
+                                      <option>Brither</option>
+                                      <option>Son</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="medicald">Medical Grade</label>
+                                    <select class="form-control" id="medicald">
+                                      <option>A (Premium)</option>
+                                      <option>B (Premium)</option>
+                                    </select>
+                                </div>
+                                <button class="btn btn-block btnD">Add Dependent</button>
+                            </div>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

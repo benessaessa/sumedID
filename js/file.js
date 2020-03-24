@@ -5,3 +5,6 @@
         $('.accountC').click(function(){
             $('.mAcount').toggle();
 });
+// $('.addSite').click(function(){
+//   $('.hideGroup').toggle();
+// })
