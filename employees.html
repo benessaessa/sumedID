@@ -178,7 +178,7 @@
                             <h5 class="text-white pl-1"><span class="pr-1">3</span> Employees Selected</h5>
                         </div>
                         <div class="col-lg-3 col-md-4 pt-1">
-                            <button class="btn btn-block btnP"><i class="fa fa-id-card pr-1"></i>
+                            <button class="btn btn-block btnP" data-toggle="modal" data-target="#printID"><i class="fa fa-id-card pr-1"></i>
                                 print ID Card
                             </button>
                         </div>
@@ -464,8 +464,8 @@
                 <!-- Modal Add Employee -->
                 <div class="modal fade" id="addEmployee" tabindex="-1" role="dialog"
                     aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modalAdd modal-sm p-2" role="document">
-                        <div class="modal-content">
+                    <div class="modal-dialog modalAdd modal-lg" role="document">
+                        <div class="modal-content p-3">
                             <div class="modal-header border-bottom-0">
                                 <h3 class="modal-title font-weight-bold" id="addEmployee">Add Employee
                                 </h3>
@@ -475,50 +475,137 @@
                             </div>
                             <div class="modal-body">
                                 <form action="#">
-                                    <label for="customFile" class="font-weight-bold">Profile picture</label>
-                                    <div class="custom-file">
-                                        <input type="file" class="custom-file-input" id="customFile">
-                                        <label class="custom-file-label" for="customFile">Choose file</label>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="customFile" class="font-weight-bold">Profile picture</label>
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="customFile">
+                                                <label class="custom-file-label" for="customFile">Choose file</label>
+                                            </div>
+                                            <div class="form-group pt-1">
+                                                <label for="empName">Employee Name</label>
+                                                <input type="text" class="form-control" placeholder="Mohamed Essa" id="empName">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="depName">Dependent Name (العربية)</label>
+                                                <input dir="rtl" type="text" class="form-control" placeholder="مالك محمد عيسي" id="depName">
+                                            </div>
+                                            <div class="form-group pt-0">
+                                                <label for="empEmail">Email Address</label>
+                                                <input type="email" class="form-control" placeholder="Mohamed.Essa@sumed.com" id="empEmail">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="empID">Employee ID</label>
+                                                <select class="form-control" id="empID">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="medical">Medical Grade</label>
+                                                <select class="form-control" id="medical">
+                                                <option>A (Premium)</option>
+                                                <option>B (Premium)</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="loc">Location (sites)</label>
+                                                <input type="text" class="form-control" placeholder="Sumed West Alexandria HQ" id="loc">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="bgGray p-2">
+                                                <label for="customFile" class="font-weight-bold">Profile picture</label>
+                                                <div class="custom-file">
+                                                    <input type="file" class="custom-file-input" id="customFile">
+                                                    <label class="custom-file-label" for="customFile">Choose file</label>
+                                                </div>
+                                                <div class="form-group pt-1">
+                                                    <label for="empName">Dependent Name</label>
+                                                    <input type="text" class="form-control" placeholder="Mohamed Essa" id="empName">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="depName">Dependent Name (العربية)</label>
+                                                    <input dir="rtl" type="text" class="form-control" placeholder="مالك محمد عيسي" id="depName">
+                                                </div>
+                                                <div class="form-group pt-0">
+                                                    <label for="dofB">Date Of Birth</label>
+                                                    <input type="date" class="form-control" id="dofB">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="empID">Relationship</label>
+                                                    <select class="form-control" id="empID">
+                                                    <option>Daughter</option>
+                                                    <option>Son</option>
+                                                    <option>Brother</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="medical">Medical Grade</label>
+                                                    <select class="form-control" id="medical">
+                                                    <option>A (Premium)</option>
+                                                    <option>B (Premium)</option>
+                                                    </select>
+                                                </div>
+                                                <button class="btn btn-block btnoD">Add Another Dependent</button>
+                                            </div>
+                                            <button class="btn btn-block btnD mt-2">Add Employee</button>
+                                        </div>
                                     </div>
-                                    <div class="form-group pt-1">
-                                        <label for="empName">Employee Name</label>
-                                        <input type="text" class="form-control" placeholder="Mohamed Essa" id="empName">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="depName">Dependent Name (العربية)</label>
-                                        <input dir="rtl" type="text" class="form-control" placeholder="مالك محمد عيسي" id="depName">
-                                    </div>
-                                    <div class="form-group pt-0">
-                                        <label for="empEmail">Email Address</label>
-                                        <input type="email" class="form-control" placeholder="Mohamed.Essa@sumed.com" id="empEmail">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="empID">Employee ID</label>
-                                        <select class="form-control" id="empID">
-                                          <option>1</option>
-                                          <option>2</option>
-                                          <option>3</option>
-                                          <option>4</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="medical">Medical Grade</label>
-                                        <select class="form-control" id="medical">
-                                          <option>A (Premium)</option>
-                                          <option>B (Premium)</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="loc">Location (sites)</label>
-                                        <input type="text" class="form-control" placeholder="Sumed West Alexandria HQ" id="loc">
-                                    </div>
-                                    <button class="btn btn-block btnD">Add Employee</button>
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>
                 
+                <!-- Print ID -->
+                <div class="modal fade" id="printID" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modalAdd modal-lg" role="document">
+                        <div class="modal-content p-3">
+                            <div class="modal-header border-bottom-0">
+                                <h3 class="modal-title font-weight-bold" id="printID"> PRINT
+                                </h3>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p class="mb-0">NAME :</p>
+                                        <h3 class="font-weight-bold txtBlack"> Mohamed Essa Abdelhameed </h3>
+                                        <p class="pt-2 mb-0">ID</p>
+                                        <h3 class="font-weight-bold txtBlack">1100</h3>
+                                        <div class="form-group pt-2">
+                                          <label for="idLang">ID LANGUAGE</label>
+                                          <select class="form-control" id="idLang">
+                                            <option>English</option>
+                                            <option>العربية</option>
+                                          </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <button class="btn btn-block btnD mt-1">Print ID Card</button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <button class="btn btn-primary">Front Preview </button>
+                                        <img src="images/card.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <button class="btn btn-info">Back Preview </button>
+                                        <img src="images/card.jpg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- ask Employee -->
                 <div class="modal fade" id="askEmployee" tabindex="-1" role="dialog"
                     aria-labelledby="exampleModalLabel" aria-hidden="true">
