@@ -113,20 +113,20 @@
             </div>
             <div class="content-body">
                 <!-- Revenue, Hit Rate & Deals -->
-                <div class="row">
+                <div class="row pt-1">
                     <div class="col-md-9 col-12">
-                        <h4 class="font-weight-bold">Admins and Limitations</h4>
+                        <h4 class="font-weight-bold txtBlack">Admins and Limitations</h4>
                         <h5 class="txtBlack">Here you can control and see all the current admins and add more admins</h5>
                     </div>
                     <div class="col-md-3">
-                        <button class="btn btnPrint btn-block mt-1"><i class="fa fa-plus"></i> Add New Admin</button>
+                        <button class="btn btnPrint btn-block mt-1" data-toggle="modal" data-target="#assignAdmin"><i class="fa fa-plus"></i> Add New Admin</button>
                     </div>
                 </div>
 
                 <!--/ Revenue, Hit Rate & Deals -->
 
                 <!-- Total earning & Recent Sales  -->
-                <div class="row pt-1">
+                <div class="row pt-2">
 
                     <div id="recent-sales" class="col-12 col-md-12">
                         <div class="card">
@@ -148,24 +148,192 @@
                                         <tbody>
                                             <tr>
                                                 <td class="text-truncate p-1">
-                                                    <ul class="list-unstyled users-list m-0">
-                                                        <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Kimberly Simmons" class="avatar avatar-sm pull-up">
-                                                            <img class="media-object rounded-circle" src="images/avat.jpg" alt="Avatar">
-                                                        </li>
-                                                        <li class="avatar avatar-sm pl-5">
-                                                            <span class="txtBlack font-weight-bold">Mohamed Essa</span>
-                                                        </li>
-                                                    </ul>
-                                                </td>
-                                                <td class="text-truncate">Senior Executive</td>
-                                                <td>
-                                                    <p>1300522</p>
+                                                    <div class="media">
+                                                        <img src="images/avat.jpg" class="mr-1 imgSmall img-fluid" width="35px" height="35px">
+                                                        <div class="media-body hedDashborad">
+                                                            <h5 class="font-weight-bold txtBlack">Mohamed Essa Abdelhameed</h5>
+                                                            <h6 class="mb-0 font-weight-bold">Senior Executive Engineer</h6>
+                                                        </div>
+                                                    </div>
                                                 </td>
                                                 <td>
-                                                  <p>28 September 2011</p>
+                                                    <p class="pt-1">1300522</p>
                                                 </td>
                                                 <td>
-                                                    <p>Ahmed Ibrahim</p>
+                                                    <div class="form-group">
+                                                        <select id="color_me" class="form-control mt-0 border-0">
+                                                            <option class="emGray"> Employee Admin</option>
+                                                            <option class="emBlue"> Dependent Admin </option>
+                                                            <option class="emOrange"> Super Admin </option>
+                                                            <option class="emPrimary"> Dependent & Employee Admin </option>
+                                                            <option class="emInfo"> ID Printer Admin </option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="form-group">
+                                                      <select class="form-control mt-0 border-0">
+                                                        <option>Enabled</option>
+                                                        <option>Disabled</option>
+                                                      </select>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button class="btn bg-none border-0 py-0 mt-1 text-danger" data-toggle="modal" data-target="#removeA">
+                                                        <img src="images/delete.svg" width="20px" height="20px" alt="delete"> Remove
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-truncate p-1">
+                                                    <div class="media">
+                                                        <img src="images/avat.jpg" class="mr-1 imgSmall img-fluid" width="35px" height="35px">
+                                                        <div class="media-body hedDashborad">
+                                                            <h5 class="font-weight-bold txtBlack">Mohamed Essa Abdelhameed</h5>
+                                                            <h6 class="mb-0 font-weight-bold">Senior Executive Engineer</h6>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <p class="pt-1">1300522</p>
+                                                </td>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <select id="color_me2" class="form-control mt-0 border-0">
+                                                            <option class="emGray"> Employee Admin</option>
+                                                            <option class="emBlue"> Dependent Admin </option>
+                                                            <option class="emOrange"> Super Admin </option>
+                                                            <option class="emPrimary"> Dependent & Employee Admin </option>
+                                                            <option class="emInfo"> ID Printer Admin </option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="form-group">
+                                                      <select class="form-control mt-0 border-0">
+                                                        <option>Enabled</option>
+                                                        <option>Disabled</option>
+                                                      </select>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button class="btn bg-none border-0 py-0 mt-1 text-danger" data-toggle="modal" data-target="#removeA">
+                                                        <img src="images/delete.svg" width="20px" height="20px" alt="delete"> Remove
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-truncate p-1">
+                                                    <div class="media">
+                                                        <img src="images/avat.jpg" class="mr-1 imgSmall img-fluid" width="35px" height="35px">
+                                                        <div class="media-body hedDashborad">
+                                                            <h5 class="font-weight-bold txtBlack">Mohamed Essa Abdelhameed</h5>
+                                                            <h6 class="mb-0 font-weight-bold">Senior Executive Engineer</h6>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <p class="pt-1">1300522</p>
+                                                </td>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <select id="color_me3" class="form-control mt-0 border-0">
+                                                            <option class="emGray"> Employee Admin</option>
+                                                            <option class="emBlue"> Dependent Admin </option>
+                                                            <option class="emOrange"> Super Admin </option>
+                                                            <option class="emPrimary"> Dependent & Employee Admin </option>
+                                                            <option class="emInfo"> ID Printer Admin </option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="form-group">
+                                                      <select class="form-control mt-0 border-0">
+                                                        <option>Enabled</option>
+                                                        <option>Disabled</option>
+                                                      </select>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button class="btn btn-success border-0 btn-block">
+                                                        Save
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-truncate p-1">
+                                                    <div class="media">
+                                                        <img src="images/avat.jpg" class="mr-1 imgSmall img-fluid" width="35px" height="35px">
+                                                        <div class="media-body hedDashborad">
+                                                            <h5 class="font-weight-bold txtBlack">Mohamed Essa Abdelhameed</h5>
+                                                            <h6 class="mb-0 font-weight-bold">Senior Executive Engineer</h6>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <p class="pt-1">1300522</p>
+                                                </td>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <select id="color_me4" class="form-control mt-0 border-0">
+                                                            <option class="emGray"> Employee Admin</option>
+                                                            <option class="emBlue"> Dependent Admin </option>
+                                                            <option class="emOrange"> Super Admin </option>
+                                                            <option class="emPrimary"> Dependent & Employee Admin </option>
+                                                            <option class="emInfo"> ID Printer Admin </option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="form-group">
+                                                      <select class="form-control mt-0 border-0">
+                                                        <option>Enabled</option>
+                                                        <option>Disabled</option>
+                                                      </select>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button class="btn bg-none border-0 py-0 mt-1 text-danger" data-toggle="modal" data-target="#removeA">
+                                                        <img src="images/delete.svg" width="20px" height="20px" alt="delete"> Remove
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-truncate p-1">
+                                                    <div class="media">
+                                                        <img src="images/avat.jpg" class="mr-1 imgSmall img-fluid" width="35px" height="35px">
+                                                        <div class="media-body hedDashborad">
+                                                            <h5 class="font-weight-bold txtBlack">Mohamed Essa Abdelhameed</h5>
+                                                            <h6 class="mb-0 font-weight-bold">Senior Executive Engineer</h6>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <p class="pt-1">1300522</p>
+                                                </td>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <select id="color_me5" class="form-control mt-0 border-0">
+                                                            <option class="emGray"> Employee Admin</option>
+                                                            <option class="emBlue"> Dependent Admin </option>
+                                                            <option class="emOrange"> Super Admin </option>
+                                                            <option class="emPrimary"> Dependent & Employee Admin </option>
+                                                            <option class="emInfo"> ID Printer Admin </option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="form-group">
+                                                      <select class="form-control mt-0 border-0">
+                                                        <option>Enabled</option>
+                                                        <option>Disabled</option>
+                                                      </select>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button class="btn bg-none border-0 py-0 mt-1 text-danger" data-toggle="modal" data-target="#removeA">
+                                                        <img src="images/delete.svg" width="20px" height="20px" alt="delete"> Remove
+                                                    </button>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -175,13 +343,246 @@
                         </div>
                     </div>
                 </div>
-                <!--/ Total earning & Recent Sales  -->
 
             </div>
         </div>
     </div>
     <!-- END: Content-->
+  
+  <!-- Modal -->
+    <div class="modal fade" id="assignAdmin" tabindex="-1" role="dialog" aria-labelledby="assignAdminTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+        <div class="modal-content px-1 bgGray">
+            <div class="modal-header pt-2 pb-2 border-0">
+                <h2 class="txtBlack font-weight-bold">Assign an Admin</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body  pt-2 border-0">
+                <p>All Employees <span>(2,379)</span></p>
+                <input type="text" class="form-control py-2" placeholder="Search By Employee Name , ID or amy Related Term">
+                <div class="table-responsive bg-white mt-2">
+                    <table id="recent-orders" class="table table-hover table-xl mb-0">
+                        <thead>
+                            <tr>
+                                <th class="border-top-0">EMPLOYEE NAME</th>
+                                <th class="border-top-0">Role</th>
+                                <th class="border-top-0">Employee ID</th>
+                                <th class="border-top-0">JOINING DATE</th>
+                                <th class="border-top-0"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-truncate p-1">
+                                    <ul class="list-unstyled users-list m-0">
+                                        <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Kimberly Simmons" class="avatar avatar-sm pull-up">
+                                            <img class="media-object rounded-circle" src="images/avat.jpg" alt="Avatar">
+                                        </li>
+                                        <li class="avatar avatar-sm pl-5">
+                                            <span class="txtBlack font-weight-bold">Mohamed Essa</span>
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td class="text-truncate">Senior Executive</td>
+                                <td>
+                                    <p>1300522</p>
+                                </td>
+                                <td>
+                                  <p>28 September 2011</p>
+                                </td>
+                                <td>
+                                    <label class="containerr">&nbsp;
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmarke"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-truncate p-1">
+                                    <ul class="list-unstyled users-list m-0">
+                                        <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Kimberly Simmons" class="avatar avatar-sm pull-up">
+                                            <img class="media-object rounded-circle" src="images/avat.jpg" alt="Avatar">
+                                        </li>
+                                        <li class="avatar avatar-sm pl-5">
+                                            <span class="txtBlack font-weight-bold">Mohamed Essa</span>
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td class="text-truncate">Senior Executive</td>
+                                <td>
+                                    <p>1300522</p>
+                                </td>
+                                <td>
+                                  <p>28 September 2011</p>
+                                </td>
+                                <td>
+                                    <label class="containerr">&nbsp;
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmarke"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-truncate p-1">
+                                    <ul class="list-unstyled users-list m-0">
+                                        <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Kimberly Simmons" class="avatar avatar-sm pull-up">
+                                            <img class="media-object rounded-circle" src="images/avat.jpg" alt="Avatar">
+                                        </li>
+                                        <li class="avatar avatar-sm pl-5">
+                                            <span class="txtBlack font-weight-bold">Mohamed Essa</span>
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td class="text-truncate">Senior Executive</td>
+                                <td>
+                                    <p>1300522</p>
+                                </td>
+                                <td>
+                                  <p>28 September 2011</p>
+                                </td>
+                                <td>
+                                    <label class="containerr">&nbsp;
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmarke"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-truncate p-1">
+                                    <ul class="list-unstyled users-list m-0">
+                                        <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Kimberly Simmons" class="avatar avatar-sm pull-up">
+                                            <img class="media-object rounded-circle" src="images/avat.jpg" alt="Avatar">
+                                        </li>
+                                        <li class="avatar avatar-sm pl-5">
+                                            <span class="txtBlack font-weight-bold">Mohamed Essa</span>
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td class="text-truncate">Senior Executive</td>
+                                <td>
+                                    <p>1300522</p>
+                                </td>
+                                <td>
+                                  <p>28 September 2011</p>
+                                </td>
+                                <td>
+                                    <label class="containerr">&nbsp;
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmarke"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-truncate p-1">
+                                    <ul class="list-unstyled users-list m-0">
+                                        <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Kimberly Simmons" class="avatar avatar-sm pull-up">
+                                            <img class="media-object rounded-circle" src="images/avat.jpg" alt="Avatar">
+                                        </li>
+                                        <li class="avatar avatar-sm pl-5">
+                                            <span class="txtBlack font-weight-bold">Mohamed Essa</span>
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td class="text-truncate">Senior Executive</td>
+                                <td>
+                                    <p>1300522</p>
+                                </td>
+                                <td>
+                                  <p>28 September 2011</p>
+                                </td>
+                                <td>
+                                    <label class="containerr">&nbsp;
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmarke"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-truncate p-1">
+                                    <ul class="list-unstyled users-list m-0">
+                                        <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Kimberly Simmons" class="avatar avatar-sm pull-up">
+                                            <img class="media-object rounded-circle" src="images/avat.jpg" alt="Avatar">
+                                        </li>
+                                        <li class="avatar avatar-sm pl-5">
+                                            <span class="txtBlack font-weight-bold">Mohamed Essa</span>
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td class="text-truncate">Senior Executive</td>
+                                <td>
+                                    <p>1300522</p>
+                                </td>
+                                <td>
+                                  <p>28 September 2011</p>
+                                </td>
+                                <td>
+                                    <label class="containerr">&nbsp;
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmarke"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="modal-footer d-block container border-0">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h3 class="mt-2 pt-1 text-left badgeY"><span class="badge">2</span> Selected Employees</h3>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                          <label for="typeAdmin">Type</label>
+                          <select class="form-control" id="typeAdmin">
+                                <option> Employee Admin</option>
+                                <option> Dependent Admin </option>
+                                <option> Super Admin </option>
+                                <option> Dependent & Employee Admin </option>
+                                <option> ID Printer Admin </option>
+                          </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <button class="btn btnDs btn-block">ASSIGN ADMIN (S)</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
 
+    <!-- modal -->
+
+    <div class="modal fade" id="removeA" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content p-3">
+                <div class="modal-header border-bottom-0">
+                    <h3 class="modal-title font-weight-bold" id="removeA">
+                    </h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body px-2 text-center">
+                    <img src="images/avat.jpg" class="imgCircule mx-auto d-block">
+                    <h5 class="pt-2">Are you Sure you want to remove Mohamed Essa From Admin ?</h5>
+                    <p>This Action is irreversible and can't be undone</p>
+                    <div class="row pt-2 justify-content-around">
+                        <div class="col-5">
+                            <button class="btn btn-danger btn-block">Remove Admin</button>
+                        </div>
+                        <div class="col-5">
+                            <button class="btn btnoD btn-block">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- BEGIN: Vendor JS-->

@@ -88,9 +88,12 @@
 .imgReduis{
     border-radius: 25px;
 }
-.btnD{
+.btnD,.btnDs{
     background-color:black;
     color: white;
+}
+.btnDs{
+    margin-top: 2rem;
 }
 .btnoD{
     background-color: white;
@@ -101,7 +104,7 @@
     background-color:black;
     color: white;
 }
-.btnD:hover{
+.btnD:hover,.btnDs:hover{
     background-color: white;
     border-color: black;
     color: black;
@@ -216,6 +219,112 @@
 .imgSmall{
     border-radius:25px;
 }
+.badgeY .badge{
+    background-color: orange;
+    padding:0.5rem 0.5rem;
+    border-radius: 30px;
+    width:29px;
+}
+.badgeY{
+    color: orange;
+}
+.bgGray{
+    background-color: #eef0f5;
+}
+.emGray,.emBlue,.emOrange,.emPrimary,.emInfo{
+    border: none;
+    color:white;
+    font-weight:bold;
+    margin-top: 0.5rem;
+    border-radius: 14px;
+    padding: 0.5rem;
+}
+.emGray{
+    background-color: gray;
+}
+.emBlue {
+    background-color: blue; 
+}
+.emOrange {
+    background-color: orange;
+}
+.emPrimary {
+    background-color: pink;
+}
+.emInfo{
+    background-color: burlywood;
+}
+/* ==================================================== */
+
+.containerr {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .containerr input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmarke {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    border-radius:25px;
+    width: 30px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .containerr:hover input ~ .checkmarke {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .containerr input:checked ~ .checkmarke {
+    background-color: rgb(247, 140, 39);
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmarke:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .containerr input:checked ~ .checkmarke:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .containerr .checkmarke:after {
+    left: 12px;
+    top: 9px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+/* ==================================================== */
 @media screen and (max-width:400px){
     .login h2{
         font-size: 1.5rem;
@@ -227,9 +336,19 @@
         padding: 2rem 0.5rem;
     }
 }
+@media screen and (max-width:500px){
+    .dropDM{
+        width:100%;
+    }
+}
 @media screen and (max-width:800px){
    
     .mAcount{
         display:block;
+    }
+}
+@media screen and (min-width:1000px){
+    .dropDM{
+        width:371px;
     }
 }

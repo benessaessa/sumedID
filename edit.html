@@ -108,7 +108,7 @@
                 <li class="nav-item active"><a href="employees.html"><img src="images/employees.svg"
                             class="pr-1 py-1"><span class="menu-title">Employees</span></a>
                 </li>
-                <li class="nav-item"><a href="#"><img src="images/admin.png" class="pr-1 pb-1"><span
+                <li class="nav-item"><a href="admins.html"><img src="images/admin.png" class="pr-1 pb-1"><span
                             class="menu-title">Admins</span></a>
                 </li>
                 <li class="nav-item"><a href="configration.html"><img src="images/configration.svg" class="pr-1 py-1"><span
@@ -133,7 +133,7 @@
                         <h6><i class="fab fa-instagram"></i> Last update on Monday , September 23rd 2020</h6>
                     </div>
                     <div class="col-lg-2 col-md-2 pt-1">
-                        <button type="button" class="btn btnD btn-lg btn-block">Save</button>
+                        <button type="button"  data-toggle="modal" data-target="#saveEM" class="btn btnD btn-lg btn-block">Save</button>
                     </div>
                     <div class="col-lg-2 col-md-3 pt-1">
                         <button type="button" class="btn btnPrint btn-lg btn-block">
@@ -351,6 +351,28 @@
                     </div>
                 </div>
                 <!-- Modal -->
+
+                <div class="modal fade" id="saveEM" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-sm modalAdd" role="document">
+                        <div class="modal-content p-2">
+                            <div class="modal-header border-bottom-0">
+                                <h3 class="modal-title font-weight-bold" id="saveEM"> Dependent Added
+                                </h3>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body px-2">
+                                <h4>Dependent has been added successfully</h4>
+                                <img src="images/correct.PNG" class="mx-auto d-block">
+                                <button class="btn btnD mx-auto d-flex justify-content-center px-4 mt-2" data-dismiss="modal" aria-label="Close">GREAT</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
                     aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
