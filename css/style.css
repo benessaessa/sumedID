@@ -228,6 +228,9 @@
 .badgeY{
     color: orange;
 }
+.textED{
+    font-size: 0.9rem !important;
+}
 .bgGray{
     background-color: #eef0f5;
 }
