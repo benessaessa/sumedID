@@ -238,6 +238,15 @@
 .bgGray{
     background-color: #eef0f5;
 }
+.btnChange{
+    background-color: #323659;
+    color:white;
+}
+.btnChange:hover{
+    border-color:#323659;
+    color:#323659;
+    background-color:white;
+}
 .emGray,.emBlue,.emOrange,.emPrimary,.emInfo{
     border: none;
     color:white;
