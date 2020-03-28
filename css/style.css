@@ -225,6 +225,10 @@
     border-radius: 30px;
     width:29px;
 }
+.fColor{
+    background-color: #323659;
+    border-radius:11px 11px 0px 0px !important;
+}
 .badgeY{
     color: orange;
 }

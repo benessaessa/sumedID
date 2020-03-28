@@ -26,6 +26,18 @@ $("#color_me5").change(function(){
   $("#color_me5").attr("class", color);
 });
 
+$('.thefiles').FancyFileUpload({
+    params: {
+        action: 'fileuploader'
+    },
+    edit: false,
+    maxfilesize: 1000000,
+    added: function (e, data) {
+        // It is okay to simulate clicking the start upload button.
+        this.find('.ff_fileupload_actions button.ff_fileupload_start_upload').click();
+    }
+});
+
 // $('.addSite').click(function(){
 //   $('.hideGroup').toggle();
 // })

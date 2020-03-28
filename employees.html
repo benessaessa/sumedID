@@ -24,6 +24,7 @@
     <!-- END: Vendor CSS-->
     <link rel="icon" href="images/sumed.png">
     <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" href="fancy-file-uploader/fancy_fileupload.css" type="text/css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-extended.css">
     <link rel="stylesheet" type="text/css" href="css/colors.css">
@@ -183,7 +184,7 @@
                             </button>
                         </div>
                         <div class="col-lg-4 col-md-4 pt-1">
-                            <button class="btn btn-block btnP"><i class="fa fa-trash pr-1"></i>
+                            <button class="btn btn-block btnP" data-toggle="modal" data-target="#removeA1"><i class="fa fa-trash pr-1"></i>
                                 Delete Employee
                             </button>
                         </div>
@@ -447,15 +448,19 @@
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <p>Please download the template here first, edit it with employee details, and re-upload
-                                    it here.
-                                </p>
                                 <div class="jumbotron jumBg py-1">
                                     <h3>
                                         <img src="images/sheet.svg" class="pr-1">
                                         <small> Template_Sumed.xslx </small>
                                         <button class="btn btnD float-right">Download</button>
                                     </h3>
+                                </div>
+                                <div class="container text-center">
+                                    <p class="mt-1">Drag & Drop or click in the box
+                                        to upload Files</p>
+                                    <input class="thefiles" type="file" name="files"
+                                        accept=".pdf" multiple>
+                                    <p class="mt-2">Drag & Drop or click in the box to upload Files</p>
                                 </div>
                             </div>
                         </div>
@@ -593,7 +598,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <button class="btn btn-primary">Front Preview </button>
+                                        <button class="btn text-white fColor">Front Preview </button>
                                         <img src="images/card.jpg" class="img-fluid" alt="">
                                     </div>
                                     <div class="col-md-6">
@@ -647,6 +652,36 @@
             </div>
         </div>
     </div>
+
+
+    <div class="modal fade" id="removeA1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content p-3">
+                <div class="modal-header border-bottom-0">
+                    <h3 class="modal-title font-weight-bold" id="removeA1">
+                    </h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body px-2 text-center">
+                    <img src="images/avat.jpg" class="imgCircule mx-auto d-block">
+                    <h5 class="pt-2">Are you Sure you want to remove Mohamed Essa From Admin ?</h5>
+                    <p>This Action is irreversible and can't be undone</p>
+                    <div class="row pt-2 justify-content-around">
+                        <div class="col-5">
+                            <button class="btn btn-danger btn-block">Remove Admin</button>
+                        </div>
+                        <div class="col-5">
+                            <button class="btn btnoD btn-block">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- END: Content-->
 
 
@@ -670,6 +705,10 @@
 
     <!-- BEGIN: Page JS-->
     <script src="js/scripts/pages/dashboard-sales.js"></script>
+    <script type="text/javascript" src="fancy-file-uploader/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="fancy-file-uploader/jquery.fileupload.js"></script>
+    <script type="text/javascript" src="fancy-file-uploader/jquery.iframe-transport.js"></script>
+    <script type="text/javascript" src="fancy-file-uploader/jquery.fancy-fileupload.js"></script>
     <!-- END: Page JS-->
     <script src="js/file.js"></script>
 </body>

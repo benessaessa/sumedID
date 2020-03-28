@@ -139,11 +139,11 @@
                         <button type="button" data-toggle="modal" data-target="#saveM" class="btn btnD btn-lg btn-block">Save</button>
                     </div>
                     <div class="col-lg-2 col-md-3 pt-1">
-                        <button type="button" class="btn btnPrint btn-lg btn-block">
+                        <button type="button" class="btn btnPrint btn-lg btn-block" data-toggle="modal" data-target="#printIDD">
                             <img src="images/print.svg" class="pr-1"> Print ID Card</button>
                     </div>
                     <div class="col-lg-3 col-md-3 pt-1">
-                        <button type="button" class="btn btnPrint btn-lg btn-block">
+                        <button type="button" class="btn btnPrint btn-lg btn-block" data-toggle="modal" data-target="#removeAd">
                             <img src="images/delete.svg" class="pr-2"> Delete Dependent</button>
                     </div>
                 </div>
@@ -502,6 +502,82 @@
             </div>
         </div>
     </div>
+
+    <div class="modal fade" id="removeAd" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content p-3">
+                <div class="modal-header border-bottom-0">
+                    <h3 class="modal-title font-weight-bold" id="removeAd">
+                    </h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body px-2 text-center">
+                    <img src="images/avat.jpg" class="imgCircule mx-auto d-block">
+                    <h5 class="pt-2">Are you Sure you want to remove Mohamed Essa From Admin ?</h5>
+                    <p>This Action is irreversible and can't be undone</p>
+                    <div class="row pt-2 justify-content-around">
+                        <div class="col-5">
+                            <button class="btn btn-danger btn-block">Remove Admin</button>
+                        </div>
+                        <div class="col-5">
+                            <button class="btn btnoD btn-block">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="printIDD" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modalAdd modal-lg" role="document">
+            <div class="modal-content p-3">
+                <div class="modal-header border-bottom-0">
+                    <h3 class="modal-title font-weight-bold" id="printIDD"> PRINT
+                    </h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="mb-0">NAME :</p>
+                            <h3 class="font-weight-bold txtBlack"> Mohamed Essa Abdelhameed </h3>
+                            <p class="pt-2 mb-0">ID</p>
+                            <h3 class="font-weight-bold txtBlack">1100</h3>
+                            <div class="form-group pt-2">
+                                <label for="idLang">ID LANGUAGE</label>
+                                <select class="form-control" id="idLang">
+                                <option>English</option>
+                                <option>العربية</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <button class="btn btn-block btnD mt-1">Print ID Card</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button class="btn text-white fColor">Front Preview </button>
+                            <img src="images/card.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <button class="btn btn-info">Back Preview </button>
+                            <img src="images/card.jpg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- BEGIN: Vendor JS-->
     <script src="js/vendors.min.js"></script>
     <!-- BEGIN Vendor JS-->
