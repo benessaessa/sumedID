@@ -302,6 +302,38 @@
     font-weight: bold;
     left: 40%;
 }
+.bottom-left2 {
+    position: absolute;
+    bottom: 40%;
+    color: black;
+    font-size: 8px;
+    font-weight: bold;
+    left: 39%;
+}
+.bottom-right2 {
+    position: absolute;
+    bottom: 40%;
+    color: black;
+    font-size: 8px;
+    font-weight: bold;
+    left: 70%;
+}
+.top-left2 {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    width: 100px;
+    height: 100px;
+    border-radius: 5px 5px 0 0;
+}
+.bottomL2 {
+    position: absolute;
+    bottom: 30%;
+    color: black;
+    font-size: 8px;
+    font-weight: bold;
+    left: 39%;
+}
 /* ==================================================== */
 
 .containerr {
