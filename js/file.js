@@ -37,6 +37,9 @@ $('.thefiles').FancyFileUpload({
         this.find('.ff_fileupload_actions button.ff_fileupload_start_upload').click();
     }
 });
+// $('.dropDM .dropdown-item').click(function(event){
+//   event.preventDefault()
+// });
 
 // $('.addSite').click(function(){
 //   $('.hideGroup').toggle();

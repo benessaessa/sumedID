@@ -27,6 +27,7 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-extended.css">
     <link rel="stylesheet" type="text/css" href="css/colors.css">
+    <link rel="stylesheet" href="fancy-file-uploader/fancy_fileupload.css" type="text/css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/components.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- END: Theme CSS-->
@@ -209,6 +210,17 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="dgrad2">الدرجة الوظيفية</label>
+                                                        <select class="form-control" id="dgrad2">
+                                                            <option>Software Engineer</option>
+                                                            <option>Engineer</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                         
                                     </div>
@@ -250,7 +262,7 @@
                             </div>
                             <div class="card-content px-1 mt-1">
                                 <div class="row">
-                                    <div class="col-md-5 px-2">
+                                    <div class="col-md-5 px-2 pb-3">
                                         <div class="form-group">
                                             <label for="sSite">Select Site</label>
                                             <select class="form-control" id="sSite">
@@ -259,16 +271,6 @@
                                                 <option>Alex</option>
                                             </select>
                                         </div>
-                                        <div class="form-group hideGroup">
-                                            <label for="sSite2">Select Site</label>
-                                            <select class="form-control" id="sSite2">
-                                                <option>West Alexandria Sumed HQ</option>
-                                                <option>Cairo</option>
-                                                <option>Alex</option>
-                                            </select>
-                                        </div>
-                                        <button class="btn bg-white border-0 mb-2 font-weight-bold" data-toggle="modal" data-target="#addSite">
-                                            <i class="fa fa-plus pr-1"></i> Add Another Site</button>
                                     </div>
                                 </div>
                             </div>
@@ -467,7 +469,12 @@
                                       <option>B (Premium)</option>
                                     </select>
                                 </div>
-                                <button class="btn btn-block btnD">Add Dependent</button>
+                                <div class="container text-center">
+                                    <p class="mt-1">Upload Documents</p>
+                                    <input class="thefiles" type="file" name="files"
+                                        accept=".pdf" multiple>
+                                </div>
+                                <button class="btn btn-block btnD mt-1">Add Dependent</button>
                             </div>
                         </div>
                         
@@ -535,11 +542,19 @@
                     <div class="row">
                         <div class="col-md-6 pt-1">
                             <button class="btn text-white fColor">Front Preview </button>
-                            <img src="images/card.jpg" class="img-fluid" alt="">
+                            <div class="contentImg">
+                                <img src="images/card.png" class="img-fluid" alt="">
+                                <img class="top-left" src="images/profile.jpg" alt="">
+                                <!-- <div class="top-left">
+                                </div> -->
+                                <div class="bottom-left">123456</div>
+                                <div class="bottom-right">The man Center</div>
+                                <div class="bottomL">information technology</div>
+                            </div>
                         </div>
                         <div class="col-md-6 pt-1">
                             <button class="btn btn-info">Back Preview </button>
-                            <img src="images/card.jpg" class="img-fluid" alt="">
+                            <img src="images/card_back.png" class="img-fluid" alt="">
                         </div>
                     </div>
                 </div>
@@ -595,6 +610,11 @@
 
     <!-- BEGIN: Page JS-->
     <script src="js/scripts/pages/dashboard-sales.js"></script>
+    <script type="text/javascript" src="fancy-file-uploader/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="fancy-file-uploader/jquery.fileupload.js"></script>
+    <script type="text/javascript" src="fancy-file-uploader/jquery.iframe-transport.js"></script>
+    <script type="text/javascript" src="fancy-file-uploader/jquery.fancy-fileupload.js"></script>
+
     <!-- END: Page JS-->
     <script src="js/file.js"></script>
 </body>

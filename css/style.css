@@ -270,6 +270,9 @@
 .emInfo{
     background-color: burlywood;
 }
+.contentImg2{
+    position: relative;
+}
 .bottom-left {
     position: absolute;
     bottom: 24%;
@@ -288,10 +291,10 @@
 }
 .top-left {
     position: absolute;
-    top: 36%;
-    left: 10%;
-    width: 100px;
-    height: 100px;
+    top: 37%;
+    left: 9%;
+    width: 103px;
+    height: 103px;
     border-radius: 5px 5px 0 0;
 }
 .bottomL {
@@ -304,7 +307,7 @@
 }
 .bottom-left2 {
     position: absolute;
-    bottom: 40%;
+    bottom: 30%;
     color: black;
     font-size: 8px;
     font-weight: bold;
@@ -312,7 +315,7 @@
 }
 .bottom-right2 {
     position: absolute;
-    bottom: 40%;
+    bottom: 30%;
     color: black;
     font-size: 8px;
     font-weight: bold;
@@ -320,15 +323,15 @@
 }
 .top-left2 {
     position: absolute;
-    top: 30%;
+    top: 17%;
     left: 5%;
-    width: 100px;
-    height: 100px;
+    width: 102px;
+    height: 102px;
     border-radius: 5px 5px 0 0;
 }
 .bottomL2 {
     position: absolute;
-    bottom: 30%;
+    bottom: 15%;
     color: black;
     font-size: 8px;
     font-weight: bold;

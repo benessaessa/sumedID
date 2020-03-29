@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="icon" href="images/sumed.png">
+    <link rel="stylesheet" href="fancy-file-uploader/fancy_fileupload.css" type="text/css" media="all" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title> Employee Profile</title>
@@ -45,7 +46,7 @@
                 <h6 class="txtMons"><i class="fab fa-instagram"></i> Last update on Monday , September 23rd 2020</h6>
             </div>
             <div class="col-lg-2 col-md-2 pt-1">
-                <button type="button" class="btn font-weight-bold  btnD btn-lg btn-block">Save</button>
+                <button type="button" class="btn font-weight-bold  btnD btn-lg btn-block" data-toggle="modal" data-target="#saveM">Save</button>
             </div>
             <div class="col-lg-2 col-md-3 pt-1">
                 <button type="button" class="btn btnPrint btn-lg btn-block"> Cancel </button>
@@ -54,7 +55,7 @@
 
         <div class="row pt-1">
 
-            <div class="col-12 col-md-9">
+            <div class="col-12 col-md-8">
                 <div class="card">
                     <div class="card-header bg-white">
                         <h5 class="font-weight-bold border-bottom-0 pb-1">Personal Information</h5>
@@ -85,19 +86,22 @@
                                         <div class="col">
                                             <div class="form-group">
                                                 <label for="emailF">Email Address</label>
-                                                <input type="email" class="form-control" id="emailF" placeholder="Mohamed.Essa@sumed.org">
+                                                <input type="email" disabled class="form-control" id="emailF" placeholder="Mohamed.Essa@sumed.org">
                                             </div>
                                         </div>
+                                        
                                         <div class="col">
                                             <div class="form-group" dir="rtl">
-                                                <label for="empFID" class="float-right">Employee ID</label>
-                                                <input type="number" class="form-control" id="empFID" placeholder="130611">
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="form-group" dir="rtl">
-                                                <label for="dFB" class="float-right">Date of Birth</label>
+                                                <label for="dFB">Date of Birth</label>
                                                 <input type="date" class="form-control" id="dFB">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group" dir="rtl">
+                                                <label for="empFID">Employee ID</label>
+                                                <input type="number" disabled class="form-control" id="empFID" placeholder="130611">
                                             </div>
                                         </div>
                                     </div>
@@ -116,12 +120,21 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-6">
+                                        <div class="col">
                                             <div class="form-group">
                                                 <label for="medicald">Medical Grade</label>
                                                 <select class="form-control" id="medicald">
                                                   <option>A (Premium)</option>
                                                   <option>B (Premium)</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <label for="dgrde">الدرجة الوظيفية </label>
+                                                <select class="form-control" id="dgrde">
+                                                  <option>Software Engineer</option>
+                                                  <option>Engineer</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -133,14 +146,22 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-3">
+            <div class="col-12 col-md-4">
                     <div class="card">
                       <div class="card-body pb-0">
-                        <h4 class="card-title font-weight-bold txtBlack txtMons">Company ID</h4>
+                        <h4 class="card-title font-weight-bold txtBlack txtMons">Employee ID</h4>
                       </div>
-                      <img src="images/card.jpg" class="img-fluid">
                       <div class="card-body pb-1">
-                          <button class="btn btn-block btnoD">Preview ID <i class="fa fa-arrow-right pl-1"></i></button>
+                        <div class="contentImg2">
+                            <img src="images/card.png" class="img-fluid" alt="">
+                            <img class="top-left2" src="images/profile.jpg" alt="">
+                            <!-- <div class="top-left">
+                            </div> -->
+                            <div class="bottom-left2">123456</div>
+                            <div class="bottom-right2">The man Center</div>
+                            <div class="bottomL2">information technology</div>
+                        </div>
+                          <button class="btn btn-block btnoD mt-1" data-toggle="modal" data-target="#printID2">Preview ID <i class="fa fa-arrow-right pl-1"></i></button>
                       </div>
                     </div>
                   
@@ -170,7 +191,7 @@
                             <div class="col-lg-4 col-sm-6">
                                 <div class="card text-white bg-white border mt-1">
                                     <div class="card-body">
-                                        <h6> ID ISSUED <button class="btn float-right btnEditS"><i class="fa fa-edit"></i> Edit</button></h6>
+                                        <h6> ID ISSUED <a href="dependent_profile.html" class="btn float-right btnEditS"><i class="fa fa-edit"></i> Edit</a></h6>
                                         <div class="media pt-1 border-bottom">
                                             <div class="media-body">
                                               <h5 class="mt-0 text-dark font-weight-bold">Lamia M. Hegazy </h5>
@@ -186,7 +207,7 @@
                             <div class="col-lg-4 col-sm-6">
                                 <div class="card text-white bg-white border mt-1">
                                     <div class="card-body">
-                                        <h6> ID ISSUED <button class="btn float-right btnEditS"><i class="fa fa-edit"></i> Edit</button></h6>
+                                        <h6> ID ISSUED <a href="dependent_profile.html" class="btn float-right btnEditS"><i class="fa fa-edit"></i> Edit</a></h6>
                                         <div class="media pt-1 border-bottom">
                                             <div class="media-body">
                                               <h5 class="mt-0 font-weight-bold">Lamia M. Hegazy </h5>
@@ -202,7 +223,7 @@
                             <div class="col-lg-4 col-sm-6">
                                 <div class="card text-white bg-white border mt-1">
                                     <div class="card-body">
-                                        <h6> ID ISSUED <button class="btn float-right btnEditS"><i class="fa fa-edit"></i> Edit</button></h6>
+                                        <h6> ID ISSUED <a href="dependent_profile.html" class="btn float-right btnEditS"><i class="fa fa-edit"></i> Edit</a></h6>
                                         <div class="media pt-1 border-bottom">
                                             <div class="media-body">
                                               <h5 class="mt-0 font-weight-bold">Lamia M. Hegazy </h5>
@@ -228,7 +249,7 @@
         <div class="modal-dialog modal-lg modalAdd" role="document">
             <div class="modal-content p-3">
                 <div class="modal-header border-bottom-0">
-                    <h3 class="modal-title font-weight-bold" id="addDependent2"> Add New Dependent
+                    <h3 class="modal-title font-weight-bold txtMons" id="addDependent2"> Add New Dependent
                     </h3>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
@@ -272,7 +293,12 @@
                                       <option>B (Premium)</option>
                                     </select>
                                 </div>
-                                <button class="btn btn-block btnD">Add Dependent</button>
+                                <div class="container text-center">
+                                    <p class="mt-1">Upload Documents</p>
+                                    <input class="thefiles" type="file" name="files"
+                                        accept=".pdf" multiple>
+                                </div>
+                                <button class="btn btn-block btnD mt-1">Add Dependent</button>
                             </div>
                         </div>
                         
@@ -282,9 +308,88 @@
         </div>
     </div>
 
+
+    <div class="modal fade" id="printID2" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modalAdd modal-lg" role="document">
+            <div class="modal-content p-3">
+                <div class="modal-header border-bottom-0">
+                    <h3 class="modal-title font-weight-bold txtMons" id="printID2"> PRINT
+                    </h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="mb-0">NAME :</p>
+                            <h5 class="font-weight-bold txtMons txtBlack"> Mohamed Essa Abdelhameed </h3>
+                            <p class="pt-2 mb-0">ID</p>
+                            <h3 class="font-weight-bold txtBlack">1100</h3>
+                            <div class="form-group pt-2">
+                                <label for="idLang">ID LANGUAGE</label>
+                                <select class="form-control" id="idLang">
+                                <option>English</option>
+                                <option>العربية</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <button class="btn btn-block btnD mt-1">Print ID Card</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 pt-1">
+                            <button class="btn text-white fColor">Front Preview </button>
+                            <div class="contentImg">
+                                <img src="images/card.png" class="img-fluid" alt="">
+                                <img class="top-left" src="images/profile.jpg" alt="">
+                                <!-- <div class="top-left">
+                                </div> -->
+                                <div class="bottom-left">123456</div>
+                                <div class="bottom-right">The man Center</div>
+                                <div class="bottomL">information technology</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 pt-1">
+                            <button class="btn btn-info">Back Preview </button>
+                            <img src="images/card_back.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="saveM" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modalAdd" role="document">
+            <div class="modal-content p-2">
+                <div class="modal-header border-bottom-0">
+                    <h3 class="modal-title font-weight-bold" id="saveM"> Dependent Added
+                    </h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body px-2">
+                    <h4>Dependent has been added successfully</h4>
+                    <img src="images/correct.PNG" class="mx-auto d-block">
+                    <button class="btn btnD mx-auto d-flex justify-content-center px-4 mt-2" data-dismiss="modal" aria-label="Close">GREAT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="fancy-file-uploader/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="fancy-file-uploader/jquery.fileupload.js"></script>
+    <script type="text/javascript" src="fancy-file-uploader/jquery.iframe-transport.js"></script>
+    <script type="text/javascript" src="fancy-file-uploader/jquery.fancy-fileupload.js"></script>
+    <script src="js/file.js"></script>
 </body>
 
 </html>
