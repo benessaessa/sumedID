@@ -371,7 +371,7 @@
 
                 <div class="modal fade" id="saveEM" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
-                    <div class="modal-dialog modal-sm modalAdd" role="document">
+                    <div class="modal-dialog modalAdd" role="document">
                         <div class="modal-content p-2">
                             <div class="modal-header border-bottom-0">
                                 <h3 class="modal-title font-weight-bold" id="saveEM"> Dependent Added
@@ -436,9 +436,18 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <label for="customFile" class="font-weight-bold">Profile picture</label>
-                                <div class="custom-file">
-                                    <input type="file" class="custom-file-input" id="customFile">
-                                    <label class="custom-file-label" for="customFile">Choose file</label>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="media-body">
+                                            <img src="images/avat.jpg" class="mr-1 imgReduis" width="40px" height="40px">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="customFile">
+                                            <label class="custom-file-label" for="customFile">Choose file</label>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="form-group pt-1">
                                     <label for="empName">Dependent Name</label>
