@@ -329,6 +329,9 @@
     height: 102px;
     border-radius: 5px 5px 0 0;
 }
+.canvasjs-chart-credit , .canvasjs-chart-toolbar{
+    display: none;
+}
 .bottomL2 {
     position: absolute;
     bottom: 15%;
