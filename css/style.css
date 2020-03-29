@@ -270,6 +270,38 @@
 .emInfo{
     background-color: burlywood;
 }
+.bottom-left {
+    position: absolute;
+    bottom: 24%;
+    color: black;
+    font-size: 8px;
+    font-weight: bold;
+    left: 40%;
+}
+.bottom-right {
+    position: absolute;
+    bottom: 24%;
+    color: black;
+    font-size: 8px;
+    font-weight: bold;
+    left: 68%;
+}
+.top-left {
+    position: absolute;
+    top: 36%;
+    left: 10%;
+    width: 100px;
+    height: 100px;
+    border-radius: 5px 5px 0 0;
+}
+.bottomL {
+    position: absolute;
+    bottom: 13%;
+    color: black;
+    font-size: 8px;
+    font-weight: bold;
+    left: 40%;
+}
 /* ==================================================== */
 
 .containerr {
