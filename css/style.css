@@ -487,6 +487,17 @@
         height: 120px;
         border-radius: 5px 5px 0 0;
     }
+    .top-left{
+        position: absolute;
+        top: 40%;
+        left: 9%;
+        width: 80px;
+        height: 80px;
+        border-radius: 5px 5px 0 0;
+    }
+    .bottom-left,.bottom-right{
+        bottom: 23%;
+    }
 }
 @media screen and (min-width:550px) and (max-width:770px){
     .top-left2 {
