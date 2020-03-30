@@ -129,20 +129,53 @@
                 <!-- Revenue, Hit Rate & Deals -->
                 
                 <div class="row">
-                    <div class="col-lg-5 col-md-4 col-12 pt-2">
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
                         <h4 class="font-weight-bold "> Edit Employee Information </h4>
                         <h6><i class="fab fa-instagram"></i> Last update on Monday , September 23rd 2020</h6>
                     </div>
-                    <div class="col-lg-2 col-md-2 pt-1">
+                    <div class="col-lg-2 col-md-6 pt-1">
                         <button type="button"  data-toggle="modal" data-target="#saveEM" class="btn btnD btn-lg btn-block">Save</button>
                     </div>
                     <div class="col-lg-2 col-md-3 pt-1">
-                        <button type="button" class="btn btnPrint btn-lg btn-block" data-toggle="modal" data-target="#printID2">
-                           <img src="images/print.svg" class="pr-1">  Print ID Card</button>
+                        <button class="btn btn-block btnPrint">Send registration link</button>
                     </div>
-                    <div class="col-lg-3 col-md-3 pt-1">
+                    <div class="col-lg-2 col-md-3 pt-1">
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-lg btn-block dropdown-toggle btnPrint dropD" data-toggle="dropdown">
+                                <img src="images/print.svg" class="pr-1">  print ID Card
+                            </button>
+                            <div class="dropdown-menu dropDM">
+                                <p class="dropdown-header pl-2 pt-1 pb-1 border-bottom">Select ID(s) to Request</p>  
+                                <a class="dropdown-item" href="#">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                        <label class="custom-control-label" for="customCheck1">Mohamed Essa</label>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                        <label class="custom-control-label" for="customCheck2">Ahmed Mohamed Essa</label>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                        <label class="custom-control-label" for="customCheck3">Mostafa Mohamed Essa</label>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <button type="button" class="btn btnPrint btn-lg btn-block" data-toggle="modal" data-target="#printID2">
+                                        <img src="images/print.svg" class="pr-1">  Print ID Card</button>
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="col-lg-2 col-md-3 pt-1">
                         <button type="button" class="btn btnPrint btn-lg btn-block" data-toggle="modal" data-target="#removeA2">
-                           <img src="images/delete.svg" class="pr-2">  Delete Employee</button>
+                           <img src="images/delete.svg" height="20px" class="pr-1">  Delete Employee</button>
                     </div>
                 </div>
 
@@ -184,17 +217,12 @@
                                                     </div>
                                                 </div>
                                                 <div class="col">
-                                                    <div class="form-group" dir="rtl">
-                                                        <label for="empFID" class="float-right">Employee ID</label>
+                                                    <div class="form-group">
+                                                        <label for="empFID">Employee ID</label>
                                                         <input type="number" class="form-control" id="empFID" placeholder="130611">
                                                     </div>
                                                 </div>
-                                                <div class="col">
-                                                    <div class="form-group" dir="rtl">
-                                                        <label for="dFB">Date of Birth</label>
-                                                        <input type="date" class="form-control" id="dFB">
-                                                    </div>
-                                                </div>
+                                    
                                             </div>
                                             <div class="row">
                                                 <div class="col">
@@ -211,7 +239,13 @@
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <div class="col-md-6">
+                                                <div class="col">
+                                                    <div class="form-group" dir="rtl">
+                                                        <label for="dFB">Date of Birth</label>
+                                                        <input type="date" class="form-control" id="dFB">
+                                                    </div>
+                                                </div>
+                                                <div class="col">
                                                     <div class="form-group">
                                                         <label for="dgrad2">Employment Level</label>
                                                         <select class="form-control" id="dgrad2">

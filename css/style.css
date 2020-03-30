@@ -160,7 +160,7 @@
 }
 .btnPrint{
     background-color: white;
-    height: 3.4rem;
+    max-height: 5.4rem;
     font-weight:bold;
     font-size: 1rem;
     background-color: #f4f5fa;
@@ -425,6 +425,9 @@
 @media screen and (max-width:500px){
     .dropDM{
         width:100%;
+    }
+    .btnPrint{
+        height: 3rem;
     }
 }
 @media screen and (max-width:800px){
