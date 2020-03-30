@@ -136,35 +136,62 @@
                         <button type="button"  data-toggle="modal" data-target="#saveEM" class="btn btnD btn-lg btn-block">Save</button>
                     </div>
                     <div class="col-lg-2 col-md-3 pt-1">
-                        <button class="btn btn-block btnPrint">Send registration link</button>
+                        <button class="btn btn-block btnPrint" data-toggle="modal" data-target="#emailS"><i class="fa fa-envelope"></i> Send registration link</button>
                     </div>
                     <div class="col-lg-2 col-md-3 pt-1">
                         <div class="dropdown">
-                            <button type="button" class="btn btn-lg btn-block dropdown-toggle btnPrint dropD" data-toggle="dropdown">
+                            <button type="button" class="btn btn-lg btn-block dropdown-toggle text-wrap btnPrint dropD" data-toggle="dropdown">
                                 <img src="images/print.svg" class="pr-1">  print ID Card
                             </button>
                             <div class="dropdown-menu dropDM">
-                                <p class="dropdown-header pl-2 pt-1 pb-1 border-bottom">Select ID(s) to Request</p>  
-                                <a class="dropdown-item" href="#">
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                        <label class="custom-control-label" for="customCheck1">Mohamed Essa</label>
+                                <p class="dropdown-header pl-2 pt-1 pb-1 border-bottom">Select ID(s) to Request
+                                    <span class="float-right font-weight-bold">Last Print</span>
+                                </p>
+                                <div class="row">
+                                    <div class="col-8">
+                                        <a class="dropdown-item" href="#">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                <label class="custom-control-label font-weight-bold text-wrap" for="customCheck1">Mohamed Essa <strong>(You)</strong></label>
+                                                <p class="pb-0 mb-0">45454</p>
+                                            </div>
+                                        </a>
                                     </div>
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="customCheck2">
-                                        <label class="custom-control-label" for="customCheck2">Ahmed Mohamed Essa</label>
+                                    <div class="col-4">
+                                        <p class="text-center text-dark mt-1 py-1 badge bgGray"><i class="fa fa-clock"></i> Yesterday</p>
                                     </div>
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="customCheck3">
-                                        <label class="custom-control-label" for="customCheck3">Mostafa Mohamed Essa</label>
+                                </div>  
+                                <div class="row">
+                                    <div class="col-8">
+                                        <a class="dropdown-item" href="#">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                                <label class="custom-control-label font-weight-bold text-wrap" for="customCheck2">Ahmed Mohamed Essa <strong>(Son)</strong></label>
+                                                <p class="pb-0 mb-0">45454</p>
+                                            </div>
+                                        </a>
                                     </div>
-                                </a>
+                                    <div class="col-4">
+                                        <p class="text-center text-dark mt-1 py-1 badge bgGray"><i class="fa fa-clock"></i> 2 days ago</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-8">
+                                        <a class="dropdown-item" href="#">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                                <label class="custom-control-label text-wrap font-weight-bold" for="customCheck2">Sara Mohamed Essa <strong>(Daughter)</strong></label>
+                                                <p class="pb-0 mb-0">45454</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-4">
+                                        <p class="text-center text-dark mt-1 py-1 badge bgGray"><i class="fa fa-clock"></i> 7 days ago </p>
+                                    </div>
+                                </div>
+                        
                                 <a class="dropdown-item" href="#">
-                                    <button type="button" class="btn btnPrint btn-lg btn-block" data-toggle="modal" data-target="#printID2">
+                                    <button type="button" class="btn btnPrint btn-lg btn-block text-wrap" data-toggle="modal" data-target="#printID2">
                                         <img src="images/print.svg" class="pr-1">  Print ID Card</button>
                                 </a>
                             </div>
@@ -174,7 +201,7 @@
                     
                     <div class="col-lg-2 col-md-3 pt-1">
                         <button type="button" class="btn btnPrint btn-lg btn-block" data-toggle="modal" data-target="#removeA2">
-                           <img src="images/delete.svg" height="20px" class="pr-1">  Delete Employee</button>
+                           <img src="images/delete.svg" height="20px">  Delete Employee </button>
                     </div>
                 </div>
 
@@ -193,8 +220,8 @@
                                         <button class="btn btnChange mx-auto d-flex justify-content-center mt-1">Change Photo</button>
                                     </div>
                                     <div class="col-md-9">
-                                        <div class="px-2">
-                                            <div class="row">
+                                        <div class="pb-2">
+                                            <div class="row pt-1">
                                                 <div class="col">
                                                     <div class="form-group">
                                                         <label for="nameF">Name</label>
@@ -304,6 +331,25 @@
                                                 <option>Alex</option>
                                             </select>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card pb-1">
+                            <div class="card-header">
+                                <h5 class="font-weight-bold border-bottom pb-1">Uploaded documents</h5>
+                            </div>
+                            <div class="card-content px-1 mt-1">
+                                <h6 class="pt-1 mb-1 font-weight-bold">National ID </h6>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h4 class="mt-1"><i class="fa fa-file pr-2"></i> NationalId.pdf</h4>
+                                    </div>
+                                    <div class="col-md-3 col-6">
+                                        <button class="btn btnoD btn-block">Update</button>
+                                    </div>
+                                    <div class="col-md-3 col-6">
+                                        <button class="btn btnD btn-block">Delete</button>
                                     </div>
                                 </div>
                             </div>
@@ -638,6 +684,28 @@
                             <button class="btn btnoD btn-block">Cancel</button>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="emailS" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modalAdd modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header bgHead border-bottom-0">
+                    <h3 class="modal-title font-weight-bold" id="emailS"><i class="fa fa-check-circle"></i> Success
+                    </h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body px-2">
+                    <h4 class="txtBlack font-weight-bold">An Email has been sent successfully</h4>
+                    <p>users are required to click the link and register through the online portal using there ID</p>
+                    <input type="text" class="form-control" disabled value="Mohamed.essa@sumed.org">
+                    <button class="btn btn-block btnoD my-2" data-dismiss="modal">BACK TO DASHBOARD</button>
                 </div>
             </div>
         </div>
