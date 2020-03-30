@@ -326,7 +326,7 @@
     top: 17%;
     left: 5%;
     width: 102px;
-    height: 102px;
+    height: 110px;
     border-radius: 5px 5px 0 0;
 }
 .canvasjs-chart-credit , .canvasjs-chart-toolbar{
@@ -441,6 +441,7 @@
         width:371px;
     }
 }
+
 @media screen and (min-width:1400px){
     .top-left2 {
         top: 19%;
@@ -455,6 +456,16 @@
         left: 5%;
         width: 145px;
         height: 145px;
+        border-radius: 5px 5px 0 0;
+    }
+}
+@media screen and (max-width:1124px){
+    .top-left2 {
+        position: absolute;
+        top: 18%;
+        left: 6%;
+        width: 72px;
+        height: 72px;
         border-radius: 5px 5px 0 0;
     }
 }
