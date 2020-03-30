@@ -50,8 +50,7 @@
                 <button type="button" data-toggle="modal" data-target="#saveM" class="btn btnD btn-lg btn-block">Save</button>
             </div>
             <div class="col-lg-2 col-md-3 pt-1">
-                <button type="button" class="btn btnPrint btn-lg btn-block" data-toggle="modal" data-target="#printIDD">
-                    <img src="images/print.svg" class="pr-1"> Print ID Card</button>
+                <button type="button" class="btn btnPrint btn-lg btn-block">Cancel</button>
             </div>
             <div class="col-lg-3 col-md-3 pt-1">
                 <button type="button" class="btn btnPrint btn-lg btn-block" data-toggle="modal" data-target="#removeAd">
@@ -85,7 +84,7 @@
                                         </div>
                                         <div class="col">
                                             <div class="form-group" dir="rtl">
-                                                <label for="nameF" class="float-right">الإسم (العربية)</label>
+                                                <label for="nameF">Name in Arabic</label>
                                                 <input type="text" class="form-control" id="nameF"
                                                     placeholder="محمد عيسي ">
                                             </div>
@@ -94,7 +93,7 @@
                                     <div class="row">
                                         <div class="col">
                                             <div class="form-group">
-                                                <label for="dFB" class="float-right">Date of Birth</label>
+                                                <label for="dFB">Date of Birth</label>
                                                 <input type="date" class="form-control" id="dFB">
                                             </div>
                                         </div>
@@ -112,10 +111,16 @@
                                     </div>
 
                                     <div class="row">
-                                        <div class="col-md-6">
+                                        <div class="col">
                                             <div class="form-group">
                                                 <label for="dId">ID</label>
                                                 <input type="text" value="123" disabled class="form-control" id="dId">
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <label for="dmd">Medical Grade</label>
+                                                <input type="text" value="Prenmium" disabled class="form-control" id="dmd">
                                             </div>
                                         </div>
                                     </div>
@@ -143,7 +148,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card mt-1">
+                <!-- <div class="card mt-1">
                     <div class="card-body pb-0">
                         <h3 class="card-title txtMons font-weight-bold">Medical Grade</h3>
                     </div>
@@ -157,7 +162,7 @@
                         </div>
                         <p>Insurance</p>
                     </div>
-                </div>
+                </div> -->
             </div>
 
         </div>
