@@ -188,19 +188,13 @@
                                     <a class="dropdown-item" href="#">
                                         <div class="custom-control custom-checkbox">
                                             <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                            <label class="custom-control-label" for="customCheck1">Mohamed Essa</label>
+                                            <label class="custom-control-label" for="customCheck1">Employees</label>
                                         </div>
                                     </a>
                                     <a class="dropdown-item" href="#">
                                         <div class="custom-control custom-checkbox">
                                             <input type="checkbox" class="custom-control-input" id="customCheck2">
-                                            <label class="custom-control-label" for="customCheck2">Salma Mohamed Essa</label>
-                                        </div>
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck3">
-                                            <label class="custom-control-label" for="customCheck3">Ahmed Mohamed Essa</label>
+                                            <label class="custom-control-label" for="customCheck2">Dependents</label>
                                         </div>
                                     </a>
                                     <a class="dropdown-item" href="#">
@@ -209,7 +203,7 @@
                                         </button>
                                     </a>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                         <div class="col-lg-4 col-md-4 pt-1">
                             <button class="btn btn-block btnP" data-toggle="modal" data-target="#removeA1"><i class="fa fa-trash pr-1"></i>
@@ -255,9 +249,9 @@
                         <div class="form-group">
                             <label for="sel1"></label>
                             <select class="form-control" id="sel1">
-                                <option>Role</option>
-                                <option>Role</option>
-                                <option>Role</option>
+                                <option>Employment Level</option>
+                                <option>Employment Level</option>
+                                <option>Employment Level</option>
                             </select>
                         </div>
                     </div>
@@ -525,12 +519,12 @@
                                                 </div>
                                             </div>
                                             
-                                            <div class="form-group pt-1">
+                                            <div class="form-group pt-2">
                                                 <label for="empName">Employee Name</label>
                                                 <input type="text" class="form-control" placeholder="Mohamed Essa" id="empName">
                                             </div>
                                             <div class="form-group">
-                                                <label for="depName">Dependent Name (العربية)</label>
+                                                <label for="depName">Employee Name in Arabic</label>
                                                 <input dir="rtl" type="text" class="form-control" placeholder="مالك محمد عيسي" id="depName">
                                             </div>
                                             <div class="form-group pt-0">
@@ -538,12 +532,18 @@
                                                 <input type="email" class="form-control" placeholder="Mohamed.Essa@sumed.com" id="empEmail">
                                             </div>
                                             <div class="form-group">
-                                                <label for="dgrad1">الدرجة الوظيفية</label>
+                                                <label for="dgrad1">Employment Level</label>
                                                 <select class="form-control" id="dgrad1">
                                                     <option>Software Engineer</option>
                                                     <option>Engineer</option>
                                                 </select>
                                             </div>
+                                            <div class="form-group">
+                                                <label for="db">Date Of Birth</label>
+                                                <input type="date" class="form-control" id="db">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="empID">Employee ID</label>
                                                 <select class="form-control" id="empID">
@@ -564,51 +564,18 @@
                                                 <label for="loc">Location (sites)</label>
                                                 <input type="text" class="form-control" placeholder="Sumed West Alexandria HQ" id="loc">
                                             </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="bgGray p-2">
-                                                <label for="customFile" class="font-weight-bold">Profile picture</label>
-                                                <div class="row">
-                                                    <div class="col-md-3">
-                                                        <div class="media-body">
-                                                            <img src="images/avat.jpg" class="mr-1 imgReduis" width="40px" height="40px">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-9">
-                                                        <div class="custom-file">
-                                                            <input type="file" class="custom-file-input" id="customFile">
-                                                            <label class="custom-file-label" for="customFile">Choose file</label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group pt-1">
-                                                    <label for="empName">Dependent Name</label>
-                                                    <input type="text" class="form-control" placeholder="Mohamed Essa" id="empName">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="depName">Dependent Name (العربية)</label>
-                                                    <input dir="rtl" type="text" class="form-control" placeholder="مالك محمد عيسي" id="depName">
-                                                </div>
-                                                <div class="form-group pt-0">
-                                                    <label for="dofB">Date Of Birth</label>
-                                                    <input type="date" class="form-control" id="dofB">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="empID">Relationship</label>
-                                                    <select class="form-control" id="empID">
-                                                    <option>Daughter</option>
-                                                    <option>Son</option>
-                                                    <option>Brother</option>
-                                                    </select>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="medical">Medical Grade</label>
-                                                    <select class="form-control" id="medical">
-                                                    <option>A (Premium)</option>
-                                                    <option>B (Premium)</option>
-                                                    </select>
-                                                </div>
-                                                <button class="btn btn-block btnoD">Add Another Dependent</button>
+                                            <div class="form-group">
+                                                <label for="titE">Title in English</label>
+                                                <input type="text" class="form-control" placeholder="Engineer" id="titE">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="titA">Title in Arabic</label>
+                                                <input type="text" class="form-control" placeholder="مهندس" id="titA">
+                                            </div>
+                                            <label>Upload national ID</label>
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="customFile">
+                                                <label class="custom-file-label" for="customFile">Choose file</label>
                                             </div>
                                             <button class="btn btn-block btnD mt-2">Add Employee</button>
                                         </div>
@@ -692,7 +659,14 @@
                                         <input type="email" class="form-control" placeholder="Mohamed.Essa@sumd.org" id="email2">
                                     </div>
                                     <div class="form-group">
-                                        <label for="dgrad">الدرجة الوظيفية</label>
+                                        <label for="empd">Employee ID</label>
+                                        <select class="form-control" id="empd">
+                                          <option>1</option>
+                                          <option>2</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="dgrad">Employment Level</label>
                                         <select class="form-control" id="dgrad">
                                           <option>Software Engineer</option>
                                           <option>Engineer</option>
@@ -712,7 +686,7 @@
                                           <option>B (Premium)</option>
                                         </select>
                                     </div>
-                                    <button class="btn btn-block btnD">Add Employee</button>
+                                    <button class="btn btn-block btnD">Send Registration Link</button>
                                 </form>
                             </div>
                         </div>
@@ -725,8 +699,8 @@
 
     <div class="modal fade" id="removeA1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content p-3">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content p-2">
                 <div class="modal-header border-bottom-0">
                     <h3 class="modal-title font-weight-bold" id="removeA1">
                     </h3>
@@ -735,12 +709,11 @@
                     </button>
                 </div>
                 <div class="modal-body px-2 text-center">
-                    <img src="images/avat.jpg" class="imgCircule mx-auto d-block">
-                    <h5 class="pt-2">Are you Sure you want to remove Mohamed Essa From Admin ?</h5>
+                    <h3 class="pt-2"><span>5</span> employees will get deleted</h3>
                     <p>This Action is irreversible and can't be undone</p>
                     <div class="row pt-2 justify-content-around">
                         <div class="col-5">
-                            <button class="btn btn-danger btn-block">Remove Admin</button>
+                            <button class="btn btn-danger btn-block">Delete employees</button>
                         </div>
                         <div class="col-5">
                             <button class="btn btnoD btn-block">Cancel</button>
