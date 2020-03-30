@@ -160,8 +160,8 @@
 }
 .btnPrint{
     background-color: white;
-    max-height: 5.4rem;
     font-weight:bold;
+    min-height: 3.4rem;
     font-size: 1rem;
     background-color: #f4f5fa;
     border: 2px solid gray;
