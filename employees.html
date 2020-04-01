@@ -530,18 +530,18 @@
                                 </div>
 
                                 <div class="form-group pt-2">
-                                    <label for="empName">Employee Name</label>
+                                    <label for="empName">Employee name in English</label>
                                     <input type="text" class="form-control" placeholder="Mohamed Essa" id="empName">
                                 </div>
-                                <div class="form-group">
-                                    <label for="depName">Employee Name in Arabic</label>
-                                    <input dir="rtl" type="text" class="form-control" placeholder="مالك محمد عيسي"
-                                        id="depName">
-                                </div>
+                                
                                 <div class="form-group pt-0">
                                     <label for="empEmail">Email Address</label>
                                     <input type="email" class="form-control" placeholder="Mohamed.Essa@sumed.com"
                                         id="empEmail">
+                                </div>
+                                <div class="form-group">
+                                    <label for="titE">Title in English</label>
+                                    <input type="text" class="form-control" placeholder="Engineer" id="titE">
                                 </div>
                                 <div class="form-group">
                                     <label for="dgrad1">Employment Level</label>
@@ -551,19 +551,30 @@
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label for="db">Date Of Birth</label>
-                                    <input type="date" class="form-control" id="db">
+                                    <label for="loc">Location (sites)</label>
+                                    <select class="form-control" id="loc">
+                                        <option>Egypt</option>
+                                        <option>Alex</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="empID">Employee ID</label>
-                                    <select class="form-control" id="empID">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                    </select>
+                                    <input type="text" class="form-control" placeholder="employee ID" id="empID">
+                                </div>
+                                <div class="form-group">
+                                    <label for="depName">Employee Name in Arabic</label>
+                                    <input dir="rtl" type="text" class="form-control" placeholder="مالك محمد عيسي"
+                                        id="depName">
+                                </div>
+                                <div class="form-group">
+                                    <label for="db">Date Of Birth</label>
+                                    <input type="date" class="form-control" id="db">
+                                </div>
+                                <div class="form-group">
+                                    <label for="titA">Title in Arabic</label>
+                                    <input type="text" class="form-control" placeholder="مهندس" id="titA">
                                 </div>
                                 <div class="form-group">
                                     <label for="medical">Medical Grade</label>
@@ -572,19 +583,7 @@
                                         <option>B (Premium)</option>
                                     </select>
                                 </div>
-                                <div class="form-group">
-                                    <label for="loc">Location (sites)</label>
-                                    <input type="text" class="form-control" placeholder="Sumed West Alexandria HQ"
-                                        id="loc">
-                                </div>
-                                <div class="form-group">
-                                    <label for="titE">Title in English</label>
-                                    <input type="text" class="form-control" placeholder="Engineer" id="titE">
-                                </div>
-                                <div class="form-group">
-                                    <label for="titA">Title in Arabic</label>
-                                    <input type="text" class="form-control" placeholder="مهندس" id="titA">
-                                </div>
+                                
                                 <label>Upload national ID</label>
                                 <div class="custom-file">
                                     <input type="file" class="custom-file-input" id="customFile">
@@ -673,10 +672,7 @@
                         </div>
                         <div class="form-group">
                             <label for="empd">Employee ID</label>
-                            <select class="form-control" id="empd">
-                                <option>1</option>
-                                <option>2</option>
-                            </select>
+                            <input type="text" class="form-control" placeholder="employee id" id="empd">
                         </div>
                         <div class="form-group">
                             <label for="dgrad">Employment Level</label>

@@ -81,7 +81,7 @@
                                     <div class="row">
                                         <div class="col">
                                             <div class="form-group">
-                                                <label for="nameF">Name</label>
+                                                <label for="nameF">Name in English</label>
                                                 <input type="text" class="form-control" id="nameF" placeholder="Mohamed Essa ">
                                             </div>
                                         </div>
@@ -94,33 +94,16 @@
                                     </div>
                                     <div class="row">
                                         <div class="col">
-                                            <div class="form-group">
-                                                <label for="emailF">Email Address</label>
-                                                <input type="email" disabled class="form-control" id="emailF" placeholder="Mohamed.Essa@sumed.org">
+                                            <div class="form-group" dir="rtl">
+                                                <label for="empFID">Employee ID</label>
+                                                <input type="text" disabled class="form-control" id="empFID" placeholder="130611">
                                             </div>
                                         </div>
                                         
                                         <div class="col">
-                                            <div class="form-group" dir="rtl">
-                                                <label for="dFB">Date of Birth</label>
-                                                <input type="date" class="form-control" id="dFB">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">
-                                            <div class="form-group" dir="rtl">
-                                                <label for="empFID">Employee ID</label>
-                                                <input type="number" disabled class="form-control" id="empFID" placeholder="130611">
-                                            </div>
-                                        </div>
-                                        <div class="col">
                                             <div class="form-group">
-                                                <label for="dgrde">Employment Level </label>
-                                                <select class="form-control" id="dgrde">
-                                                  <option>Software Engineer</option>
-                                                  <option>Engineer</option>
-                                                </select>
+                                                <label for="emailF">Email Address</label>
+                                                <input type="email" disabled class="form-control" id="emailF" placeholder="Mohamed.Essa@sumed.org">
                                             </div>
                                         </div>
                                     </div>
@@ -138,6 +121,24 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-group" dir="rtl">
+                                                <label for="dFB">Date of Birth</label>
+                                                <input type="date" class="form-control" id="dFB">
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <label for="dgrde">Employment Level </label>
+                                                <select class="form-control" id="dgrde">
+                                                  <option>Software Engineer</option>
+                                                  <option>Engineer</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
                                     <div class="row">
                                         <div class="col">
                                             <div class="form-group">
@@ -225,7 +226,7 @@
                             <div class="col-lg-4 col-sm-6">
                                 <div class="card text-white bg-white border mt-1">
                                     <div class="card-body">
-                                        <h6> ID ISSUED <a href="dependent_profile.html" class="btn float-right btnEditS"><i class="fa fa-edit"></i> Edit</a></h6>
+                                        <h6> ID <span>5</span> <a href="dependent_profile.html" class="btn float-right btnEditS"><i class="fa fa-edit"></i> Edit</a></h6>
                                         <div class="media pt-1 border-bottom">
                                             <div class="media-body">
                                               <h5 class="mt-0 text-dark font-weight-bold">Lamia M. Hegazy </h5>
@@ -241,7 +242,7 @@
                             <div class="col-lg-4 col-sm-6">
                                 <div class="card text-white bg-white border mt-1">
                                     <div class="card-body">
-                                        <h6> ID ISSUED <a href="dependent_profile.html" class="btn float-right btnEditS"><i class="fa fa-edit"></i> Edit</a></h6>
+                                        <h6> ID <span>6</span> <a href="dependent_profile.html" class="btn float-right btnEditS"><i class="fa fa-edit"></i> Edit</a></h6>
                                         <div class="media pt-1 border-bottom">
                                             <div class="media-body">
                                               <h5 class="mt-0 font-weight-bold">Lamia M. Hegazy </h5>
@@ -257,7 +258,7 @@
                             <div class="col-lg-4 col-sm-6">
                                 <div class="card text-white bg-white border mt-1">
                                     <div class="card-body">
-                                        <h6> ID ISSUED <a href="dependent_profile.html" class="btn float-right btnEditS"><i class="fa fa-edit"></i> Edit</a></h6>
+                                        <h6> ID <span>7</span> <a href="dependent_profile.html" class="btn float-right btnEditS"><i class="fa fa-edit"></i> Edit</a></h6>
                                         <div class="media pt-1 border-bottom">
                                             <div class="media-body">
                                               <h5 class="mt-0 font-weight-bold">Lamia M. Hegazy </h5>
@@ -308,16 +309,20 @@
                                     </div>
                                 </div>
                                 <div class="form-group pt-1">
-                                    <label for="empName">Dependent Name</label>
+                                    <label for="empName">Dependent Name in English</label>
                                     <input type="text" class="form-control" placeholder="Mohamed Essa" id="empName">
                                 </div>
-                                <div class="form-group">
-                                    <label for="depName">Dependent Name (العربية)</label>
-                                    <input dir="rtl" type="text" class="form-control" placeholder="مالك محمد عيسي" id="depName">
-                                </div>
+                                
                                 <div class="form-group pt-0">
                                     <label for="dofBirth">Date of Birth</label>
                                     <input type="date" class="form-control" placeholder="Mohamed.Essa@sumed.com" id="empEmail">
+                                </div>
+                                <div class="form-group">
+                                    <label>National ID/Birth Certificate</label>
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="customFile4">
+                                        <label class="custom-file-label" for="customFile4">Choose file</label>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -330,19 +335,14 @@
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label for="medicald">Medical Grade</label>
-                                    <select class="form-control" id="medicald">
-                                      <option>A (Premium)</option>
-                                      <option>B (Premium)</option>
-                                    </select>
+                                    <label for="depName">Dependent Name in Arabic</label>
+                                    <input dir="rtl" type="text" class="form-control" placeholder="مالك محمد عيسي" id="depName">
                                 </div>
                                 <div class="form-group">
-                                    <label>National ID</label>
-                                    <div class="custom-file">
-                                        <input type="file" class="custom-file-input" id="customFile4">
-                                        <label class="custom-file-label" for="customFile4">Choose file</label>
-                                    </div>
+                                    <label for="medicald">Medical Grade</label>
+                                    <input type="text" class="form-control" value="prenmium" disabled id="medicald">
                                 </div>
+                                
                                 <div class="form-group">
                                     <label>University Registration Certificate</label>
                                     <div class="custom-file">
